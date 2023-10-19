@@ -3,7 +3,8 @@
         "data": {
             "id": "cwc0ueu5v0g0",
             "created": 1697678618893,
-            "text": "服务器"
+            "text": "服务器",
+            "expandState": "expand"
         },
         "children": [
             {
@@ -267,6 +268,276 @@
                                     "text": "需要支持开发语言的 Runtime（对于 Tomcat 来说，就是 Java），保证应用能够在应用服务器上正常运行。\n对于 Tomcat 来说，就是需要提供 JSP/Sevlet 运行需要的标准类库、Interface 等。"
                                 },
                                 "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwc2vxf7zwo0",
+                    "created": 1697684379932,
+                    "text": "CGI"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwc2vxf7uyg0",
+                            "created": 1697684379932,
+                            "text": "功能"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwc2vxf8b0o0",
+                                    "created": 1697684379932,
+                                    "text": "实现web服务器与应用服务器之间的通信"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwc2vxf7zc80",
+                            "created": 1697684379932,
+                            "text": "例子"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwc2vxf7xgw0",
+                                    "created": 1697684379932,
+                                    "text": "通用网关接口CGI（Common Gateway Interface）"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf8bvk0",
+                                            "created": 1697684379932,
+                                            "text": "功能"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf7w8g0",
+                                                    "created": 1697684379932,
+                                                    "text": "web服务器可以通过CGI调用外部程序来处理客户端的请求"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf7uqo0",
+                                            "created": 1697684379932,
+                                            "text": "交互过程"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf87d40",
+                                                    "created": 1697684379932,
+                                                    "text": "1、客户端（请求动态页面）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf7t680",
+                                                    "created": 1697684379932,
+                                                    "text": "2、web服务器启动CGI程序处理该请求"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf7s280",
+                                                    "created": 1697684379932,
+                                                    "text": "3、web服务器将该请求的数据传递给CGI"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf83ww0",
+                                                    "created": 1697684379932,
+                                                    "text": "4、CGI调用外部程序处理该请求，返回静态页面数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8bco0",
+                                                    "created": 1697684379932,
+                                                    "text": "5、web服务器将返回结果转发给客户端"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf86e80",
+                                            "created": 1697684379932,
+                                            "text": "缺点"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf873s0",
+                                                    "created": 1697684379932,
+                                                    "text": "低效，每次请求需要启动新的进程或线程来处理（fork-and-execute 模式）"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwc2vxf7to80",
+                                    "created": 1697684379932,
+                                    "text": " fast-cgi 常驻 (long-live) 型的 CGI"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf83m80",
+                                            "created": 1697684379932,
+                                            "text": "优点"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf83200",
+                                                    "created": 1697684379932,
+                                                    "text": "解决了CGI的痛点，web服务器和应用服务器之间可以建立持久的通信信道"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc31zcd3yw0",
+                                                    "created": 1697684854298,
+                                                    "text": "比CGI 技术效率提高 5 倍以上"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc3265obqg0",
+                                                    "created": 1697684869131,
+                                                    "text": "支持分布式的部署，FastCGI 程序可以在web 服务器以外的主机上执行"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf8rig0",
+                                            "created": 1697684379933,
+                                            "text": "实现"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8i1k0",
+                                                    "created": 1697684379933,
+                                                    "text": "启动时注册fastCGI进程，并监听一个socket，进程可复用，避免了重复创建销毁，效率高。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc34frwkew0",
+                                                    "created": 1697685046794,
+                                                    "text": "参考链接",
+                                                    "hyperlink": "https://blog.csdn.net/weixin_45525272/article/details/107824299",
+                                                    "hyperlinkTitle": "参考"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf8eyg0",
+                                            "created": 1697684379933,
+                                            "text": "应用"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8kpc0",
+                                                    "created": 1697684379933,
+                                                    "text": "主流的web服务器Apache,Nginx,lighttpd等支持fastCGI技术"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc36f5k6ko0",
+                                            "created": 1697685202171,
+                                            "text": "spawn-fcgi",
+                                            "layout_right_offset": {
+                                                "x": -1.1368683772161603e-13,
+                                                "y": 41.00000000000023
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc36p6v41s0",
+                                                    "created": 1697685224018,
+                                                    "text": "功能"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc36u7q28o0",
+                                                            "created": 1697685234954,
+                                                            "text": "通用的FastCGI进程管理器，简单小巧，原先是属于lighttpd，由于使用广泛，成为独立项目。",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc3d2e5hns0",
+                                                            "created": 1697685722942,
+                                                            "text": "打开监听端口，绑定地址，fork-and-exec创建FastCGI进程，退出完成工作。FastCGI应用程序初始化，然后进入死循环侦听socket的连接请求。"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc3ayio1f40",
+                                                            "created": 1697685557779,
+                                                            "text": "应用",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc379m4suw0",
+                                                                    "created": 1697685268477,
+                                                                    "text": "Nginx不能像Apache直接执行外部可执行程序，但Nginx可以作为代理服务器，将请求转给后端服务器处理。Nginx支持FastCGI代理，接收客户端的请求，转发给后端FastCGI进程。"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
