@@ -669,6 +669,25 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwd14gqbba80",
+                            "created": 1697780966612,
+                            "text": "cgicc"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwd14k6jo5c0",
+                                    "created": 1697780974123,
+                                    "text": "一个C++语言实现的开源CGI库，采用LGPL授权协议",
+                                    "hyperlink": "https://cloud.tencent.com/developer/article/1403327?areaSource=102001.8&traceId=hKligtxOWdEiW7wAGsFzh",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             }
