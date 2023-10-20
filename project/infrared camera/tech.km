@@ -1,0 +1,680 @@
+{
+    "root": {
+        "data": {
+            "id": "cwc0ueu5v0g0",
+            "created": 1697678618893,
+            "text": "相关技术栈",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cwcylh2i22g0",
+                    "created": 1697773836210,
+                    "text": "服务器",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwc0uhj6v9s0",
+                            "created": 1697678624759,
+                            "text": "web服务器\n（仅支持静态网页）",
+                            "layout": null,
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwc0v757wdk0",
+                                    "created": 1697678680511,
+                                    "text": "功能",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc1eynmgs00",
+                                            "created": 1697680229316,
+                                            "text": "传送页面供浏览器展示"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc1f6970og0",
+                                            "created": 1697680245858,
+                                            "text": "专门处理HTTP请求，所以也叫HTTP服务器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwc13iv20r40",
+                                    "created": 1697679332931,
+                                    "text": "例子",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc13h94d5s0",
+                                            "created": 1697679329428,
+                                            "text": "Apache、IIS",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc1fsumt5s0",
+                                            "created": 1697680295043,
+                                            "text": "Nginx（常用做静态内容服务和代理服务器）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc1go10n540",
+                                                    "created": 1697680362910,
+                                                    "text": "1、客户端请求 -> nginx ->应用服务器（tomcat/django等）"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc1jowjab40",
+                                                    "created": 1697680599908,
+                                                    "text": "2、应用服务器执行应用，将动态的内容转化为静态的内容"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc1jq5coig0",
+                                                    "created": 1697680602618,
+                                                    "text": "3、应用服务器(静态内容) -> nginx -> 客户端展示"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc1gffpsv40",
+                                            "created": 1697680344207,
+                                            "text": "Tomcat"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc1lve0dx40",
+                                                    "created": 1697680770754,
+                                                    "text": "功能"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1lyl21uo0",
+                                                            "created": 1697680777710,
+                                                            "text": "具有解释和执行服务器端代码的能力，可以称作为轻量级应用服务器"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1mbwky2w0",
+                                                            "created": 1697680806705,
+                                                            "text": "提供JNDI和JMX的实现机制"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1o1oaojc0",
+                                                            "created": 1697680941164,
+                                                            "text": "一个支持Servlet（用于运行和管理JavaServlet的运行环境）和JSP技术的容器\n既能为动态网页服务，又能为静态网页提供支持。"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1mc7aitc0",
+                                                            "created": 1697680807353,
+                                                            "text": "不属于应用服务器，因为它不提供J2EE API的其他大多数支持"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc1m5pf0io0",
+                                                    "created": 1697680793211,
+                                                    "text": "缺点"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1ouf2kz40",
+                                                            "created": 1697681003733,
+                                                            "text": "tomcat使用纯java编写，性能没有通常的web服务器（使用c/c++实现）快"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1oyiy8fk0",
+                                                            "created": 1697681012675,
+                                                            "text": "功能不如传统web服务器丰富"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc1p48ik9s0",
+                                                    "created": 1697681025105,
+                                                    "text": "应用"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1pdw6tnk0",
+                                                            "created": 1697681046127,
+                                                            "text": "大型网站使用tomcat + Apache/Nginx "
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc1pifljso0",
+                                                                    "created": 1697681056008,
+                                                                    "text": "Apache/Nginx负责接受来自客户端的HTTP请求，\n然后将HTTP请求转发给Tomcat来处理",
+                                                                    "layout_right_offset": {
+                                                                        "x": 0,
+                                                                        "y": 1
+                                                                    }
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc1pmf7aqo0",
+                                                                    "created": 1697681064691,
+                                                                    "text": "一台Apache/Nginx连接多台tomcat实现负载均衡，可提高性能"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwc131ernw00",
+                            "created": 1697679294941,
+                            "text": "应用服务器",
+                            "layout_mind_offset": {
+                                "x": 430,
+                                "y": 118
+                            },
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwc1r3g9j7s0",
+                                    "created": 1697681180125,
+                                    "text": "功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc1rihq8kg0",
+                                            "created": 1697681212865,
+                                            "text": "为客户端应用程序提供可调用的方法"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwc1r81s9a00",
+                                    "created": 1697681190133,
+                                    "text": "例子"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc1rj06uq00",
+                                            "created": 1697681213981,
+                                            "text": "JBoss、Weblogic、WebSphere"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwc1r99mocg0",
+                                    "created": 1697681192784,
+                                    "text": "使用限制"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc1rk3z9000",
+                                            "created": 1697681216387,
+                                            "text": "需要支持开发语言的 Runtime（对于 Tomcat 来说，就是 Java），保证应用能够在应用服务器上正常运行。\n对于 Tomcat 来说，就是需要提供 JSP/Sevlet 运行需要的标准类库、Interface 等。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwc2vxf7zwo0",
+                            "created": 1697684379932,
+                            "text": "CGI",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwc2vxf7uyg0",
+                                    "created": 1697684379932,
+                                    "text": "功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf8b0o0",
+                                            "created": 1697684379932,
+                                            "text": "实现web服务器与应用服务器之间的通信"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwc2vxf7zc80",
+                                    "created": 1697684379932,
+                                    "text": "例子"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf7xgw0",
+                                            "created": 1697684379932,
+                                            "text": "通用网关接口CGI（Common Gateway Interface）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8bvk0",
+                                                    "created": 1697684379932,
+                                                    "text": "功能"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf7w8g0",
+                                                            "created": 1697684379932,
+                                                            "text": "web服务器可以通过CGI调用外部程序来处理客户端的请求"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf7uqo0",
+                                                    "created": 1697684379932,
+                                                    "text": "交互过程"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf87d40",
+                                                            "created": 1697684379932,
+                                                            "text": "1、客户端（请求动态页面）"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf7t680",
+                                                            "created": 1697684379932,
+                                                            "text": "2、web服务器启动CGI程序处理该请求"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf7s280",
+                                                            "created": 1697684379932,
+                                                            "text": "3、web服务器将该请求的数据传递给CGI"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf83ww0",
+                                                            "created": 1697684379932,
+                                                            "text": "4、CGI调用外部程序处理该请求，返回静态页面数据"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf8bco0",
+                                                            "created": 1697684379932,
+                                                            "text": "5、web服务器将返回结果转发给客户端"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf86e80",
+                                                    "created": 1697684379932,
+                                                    "text": "缺点"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf873s0",
+                                                            "created": 1697684379932,
+                                                            "text": "低效，每次请求需要启动新的进程或线程来处理（fork-and-execute 模式）"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwc2vxf7to80",
+                                            "created": 1697684379932,
+                                            "text": " fast-cgi 常驻 (long-live) 型的 CGI"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf83m80",
+                                                    "created": 1697684379932,
+                                                    "text": "优点"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf83200",
+                                                            "created": 1697684379932,
+                                                            "text": "解决了CGI的痛点，web服务器和应用服务器之间可以建立持久的通信信道"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc31zcd3yw0",
+                                                            "created": 1697684854298,
+                                                            "text": "比CGI 技术效率提高 5 倍以上"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc3265obqg0",
+                                                            "created": 1697684869131,
+                                                            "text": "支持分布式的部署，FastCGI 程序可以在web 服务器以外的主机上执行"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8rig0",
+                                                    "created": 1697684379933,
+                                                    "text": "实现"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf8i1k0",
+                                                            "created": 1697684379933,
+                                                            "text": "启动时注册fastCGI进程，并监听一个socket，进程可复用，避免了重复创建销毁，效率高。"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc34frwkew0",
+                                                            "created": 1697685046794,
+                                                            "text": "参考链接",
+                                                            "hyperlink": "https://blog.csdn.net/weixin_45525272/article/details/107824299",
+                                                            "hyperlinkTitle": "参考"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc2vxf8eyg0",
+                                                    "created": 1697684379933,
+                                                    "text": "应用"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc2vxf8kpc0",
+                                                            "created": 1697684379933,
+                                                            "text": "主流的web服务器Apache,Nginx,lighttpd等支持fastCGI技术"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwc36f5k6ko0",
+                                                    "created": 1697685202171,
+                                                    "text": "spawn-fcgi",
+                                                    "layout_right_offset": {
+                                                        "x": -1.1368683772161603e-13,
+                                                        "y": 41.00000000000023
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc36p6v41s0",
+                                                            "created": 1697685224018,
+                                                            "text": "功能"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc36u7q28o0",
+                                                                    "created": 1697685234954,
+                                                                    "text": "通用的FastCGI进程管理器，简单小巧，原先是属于lighttpd，由于使用广泛，成为独立项目。",
+                                                                    "expandState": "expand"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc3d2e5hns0",
+                                                                    "created": 1697685722942,
+                                                                    "text": "打开监听端口，绑定地址，fork-and-exec创建FastCGI进程，退出完成工作。FastCGI应用程序初始化，然后进入死循环侦听socket的连接请求。"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cwc3ayio1f40",
+                                                                    "created": 1697685557779,
+                                                                    "text": "应用",
+                                                                    "expandState": "expand"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cwc379m4suw0",
+                                                                            "created": 1697685268477,
+                                                                            "text": "Nginx不能像Apache直接执行外部可执行程序，但Nginx可以作为代理服务器，将请求转给后端服务器处理。Nginx支持FastCGI代理，接收客户端的请求，转发给后端FastCGI进程。"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwcymqvfdc80",
+                    "created": 1697773935914,
+                    "text": "C++库"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwcyn0hinbk0",
+                            "created": 1697773956841,
+                            "text": "nlohmann"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwcyn5yngo80",
+                                    "created": 1697773968761,
+                                    "text": "用于解析json的开源c++库"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwcynmbb5bs0",
+                                    "created": 1697774004354,
+                                    "text": "优点"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwcynpdmd8o0",
+                                            "created": 1697774011025,
+                                            "text": "只需导入头文件即可使用，方便整合到项目",
+                                            "hyperlink": "https://json.nlohmann.me/api/basic_json/",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwcyohghvf40",
+                                            "created": 1697774072148,
+                                            "text": "提供了丰富而且符合直觉的接口",
+                                            "expandState": "expand",
+                                            "hyperlink": "https://github.com/nlohmann/json",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwcyqt5h3vk0",
+                            "created": 1697774254332,
+                            "text": "jwt_cpp"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwcyqwj5vpk0",
+                                    "created": 1697774261690,
+                                    "text": "一个基于c++实现的JWT库，提供了JWT（json web token）的生成、解析、验证功能"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwcys9x8di80",
+                                    "created": 1697774369203,
+                                    "text": "JWT"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwcyv0r75nc0",
+                                            "created": 1697774584339,
+                                            "text": "JWT（JSON Web Token）是一种用于身份验证和授权的开放标准（RFC 7519），它是一种安全的、轻量级的身份验证方式。",
+                                            "layout_right_offset": {
+                                                "x": -5,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwcyvezwy3k0",
+                                            "created": 1697774615341,
+                                            "text": "组成：头部（Header）、载荷（Payload）和签名（Signature）",
+                                            "layout_right_offset": {
+                                                "x": -1,
+                                                "y": 5
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwcyvu1royo0",
+                                            "created": 1697774648105,
+                                            "text": "详细介绍",
+                                            "hyperlink": "https://baijiahao.baidu.com/s?id=1765023612132805962&wfr=spider&for=pc",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic",
+    "version": "1.4.43"
+}
