@@ -12,7 +12,9 @@
                     "id": "cwcylh2i22g0",
                     "created": 1697773836210,
                     "text": "服务器",
-                    "expandState": "expand"
+                    "expandState": "expand",
+                    "resource": [],
+                    "note": null
                 },
                 "children": [
                     {
@@ -21,7 +23,8 @@
                             "created": 1697678624759,
                             "text": "web服务器\n（仅支持静态网页）",
                             "layout": null,
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "progress": null
                         },
                         "children": [
                             {
@@ -29,14 +32,16 @@
                                     "id": "cwc0v757wdk0",
                                     "created": 1697678680511,
                                     "text": "功能",
-                                    "layout": null
+                                    "layout": null,
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc1eynmgs00",
                                             "created": 1697680229316,
-                                            "text": "传送页面供浏览器展示"
+                                            "text": "传送页面供浏览器展示",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -44,7 +49,8 @@
                                         "data": {
                                             "id": "cwc1f6970og0",
                                             "created": 1697680245858,
-                                            "text": "专门处理HTTP请求，所以也叫HTTP服务器"
+                                            "text": "专门处理HTTP请求，所以也叫HTTP服务器",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -64,7 +70,8 @@
                                             "id": "cwc13h94d5s0",
                                             "created": 1697679329428,
                                             "text": "Apache、IIS",
-                                            "layout": null
+                                            "layout": null,
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -72,14 +79,16 @@
                                         "data": {
                                             "id": "cwc1fsumt5s0",
                                             "created": 1697680295043,
-                                            "text": "Nginx（常用做静态内容服务和代理服务器）"
+                                            "text": "Nginx（常用做静态内容服务和代理服务器）",
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
                                                 "data": {
                                                     "id": "cwc1go10n540",
                                                     "created": 1697680362910,
-                                                    "text": "1、客户端请求 -> nginx ->应用服务器（tomcat/django等）"
+                                                    "text": "1、客户端请求 -> nginx ->应用服务器（tomcat/django等）",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": []
                                             },
@@ -87,7 +96,8 @@
                                                 "data": {
                                                     "id": "cwc1jowjab40",
                                                     "created": 1697680599908,
-                                                    "text": "2、应用服务器执行应用，将动态的内容转化为静态的内容"
+                                                    "text": "2、应用服务器执行应用，将动态的内容转化为静态的内容",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": []
                                             },
@@ -95,7 +105,8 @@
                                                 "data": {
                                                     "id": "cwc1jq5coig0",
                                                     "created": 1697680602618,
-                                                    "text": "3、应用服务器(静态内容) -> nginx -> 客户端展示"
+                                                    "text": "3、应用服务器(静态内容) -> nginx -> 客户端展示",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": []
                                             }
@@ -105,14 +116,16 @@
                                         "data": {
                                             "id": "cwc1gffpsv40",
                                             "created": 1697680344207,
-                                            "text": "Tomcat"
+                                            "text": "Tomcat",
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
                                                 "data": {
                                                     "id": "cwc1lve0dx40",
                                                     "created": 1697680770754,
-                                                    "text": "功能"
+                                                    "text": "功能",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -153,7 +166,8 @@
                                                 "data": {
                                                     "id": "cwc1m5pf0io0",
                                                     "created": 1697680793211,
-                                                    "text": "缺点"
+                                                    "text": "缺点",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -178,14 +192,16 @@
                                                 "data": {
                                                     "id": "cwc1p48ik9s0",
                                                     "created": 1697681025105,
-                                                    "text": "应用"
+                                                    "text": "应用",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
                                                         "data": {
                                                             "id": "cwc1pdw6tnk0",
                                                             "created": 1697681046127,
-                                                            "text": "大型网站使用tomcat + Apache/Nginx "
+                                                            "text": "大型网站使用tomcat + Apache/Nginx ",
+                                                            "expandState": "collapse"
                                                         },
                                                         "children": [
                                                             {
@@ -227,21 +243,23 @@
                                 "x": 430,
                                 "y": 118
                             },
-                            "expandState": "collapse"
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cwc1r3g9j7s0",
                                     "created": 1697681180125,
-                                    "text": "功能"
+                                    "text": "功能",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc1rihq8kg0",
                                             "created": 1697681212865,
-                                            "text": "为客户端应用程序提供可调用的方法"
+                                            "text": "为客户端应用程序提供可调用的方法",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -251,14 +269,16 @@
                                 "data": {
                                     "id": "cwc1r81s9a00",
                                     "created": 1697681190133,
-                                    "text": "例子"
+                                    "text": "例子",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc1rj06uq00",
                                             "created": 1697681213981,
-                                            "text": "JBoss、Weblogic、WebSphere"
+                                            "text": "JBoss、Weblogic、WebSphere",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -268,14 +288,16 @@
                                 "data": {
                                     "id": "cwc1r99mocg0",
                                     "created": 1697681192784,
-                                    "text": "使用限制"
+                                    "text": "使用限制",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc1rk3z9000",
                                             "created": 1697681216387,
-                                            "text": "需要支持开发语言的 Runtime（对于 Tomcat 来说，就是 Java），保证应用能够在应用服务器上正常运行。\n对于 Tomcat 来说，就是需要提供 JSP/Sevlet 运行需要的标准类库、Interface 等。"
+                                            "text": "需要支持开发语言的 Runtime（对于 Tomcat 来说，就是 Java），保证应用能够在应用服务器上正常运行。\n对于 Tomcat 来说，就是需要提供 JSP/Sevlet 运行需要的标准类库、Interface 等。",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -288,21 +310,23 @@
                             "id": "cwc2vxf7zwo0",
                             "created": 1697684379932,
                             "text": "CGI",
-                            "expandState": "collapse"
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cwc2vxf7uyg0",
                                     "created": 1697684379932,
-                                    "text": "功能"
+                                    "text": "功能",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc2vxf8b0o0",
                                             "created": 1697684379932,
-                                            "text": "实现web服务器与应用服务器之间的通信"
+                                            "text": "实现web服务器与应用服务器之间的通信",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -312,21 +336,24 @@
                                 "data": {
                                     "id": "cwc2vxf7zc80",
                                     "created": 1697684379932,
-                                    "text": "例子"
+                                    "text": "例子",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cwc2vxf7xgw0",
                                             "created": 1697684379932,
-                                            "text": "通用网关接口CGI（Common Gateway Interface）"
+                                            "text": "通用网关接口CGI（Common Gateway Interface）",
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
                                                 "data": {
                                                     "id": "cwc2vxf8bvk0",
                                                     "created": 1697684379932,
-                                                    "text": "功能"
+                                                    "text": "功能",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -343,7 +370,8 @@
                                                 "data": {
                                                     "id": "cwc2vxf7uqo0",
                                                     "created": 1697684379932,
-                                                    "text": "交互过程"
+                                                    "text": "交互过程",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -392,7 +420,8 @@
                                                 "data": {
                                                     "id": "cwc2vxf86e80",
                                                     "created": 1697684379932,
-                                                    "text": "缺点"
+                                                    "text": "缺点",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -411,14 +440,16 @@
                                         "data": {
                                             "id": "cwc2vxf7to80",
                                             "created": 1697684379932,
-                                            "text": " fast-cgi 常驻 (long-live) 型的 CGI"
+                                            "text": " fast-cgi 常驻 (long-live) 型的 CGI",
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
                                                 "data": {
                                                     "id": "cwc2vxf83m80",
                                                     "created": 1697684379932,
-                                                    "text": "优点"
+                                                    "text": "优点",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -451,7 +482,8 @@
                                                 "data": {
                                                     "id": "cwc2vxf8rig0",
                                                     "created": 1697684379933,
-                                                    "text": "实现"
+                                                    "text": "实现",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -478,7 +510,8 @@
                                                 "data": {
                                                     "id": "cwc2vxf8eyg0",
                                                     "created": 1697684379933,
-                                                    "text": "应用"
+                                                    "text": "应用",
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -499,14 +532,16 @@
                                                     "layout_right_offset": {
                                                         "x": -1.1368683772161603e-13,
                                                         "y": 41.00000000000023
-                                                    }
+                                                    },
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
                                                         "data": {
                                                             "id": "cwc36p6v41s0",
                                                             "created": 1697685224018,
-                                                            "text": "功能"
+                                                            "text": "功能",
+                                                            "expandState": "collapse"
                                                         },
                                                         "children": [
                                                             {
@@ -553,6 +588,99 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwd5juxksdc0",
+                            "created": 1697793457428,
+                            "text": "代理",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwd5k5iqwt40",
+                                    "created": 1697793480476,
+                                    "text": "正向代理",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwd5slxvkug0",
+                                            "created": 1697794143132,
+                                            "text": "正向代理是代理客户端向服务器发送请求，帮助客户端访问受限资源",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwd5syplxe80",
+                                            "created": 1697794170931,
+                                            "text": "应用：正向代理的典型用途是为在防火墙内的局域网客户端提供访问  Internet  的途径，隐藏客户端自身，因此需要对客户端进行身份验证以保证安全",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwd5uc8nmw00",
+                                            "created": 1697794278745,
+                                            "text": "正向代理通常用于解决访问问题，例如访问受限网站、获取代理  IP  等",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwd5k892e5k0",
+                                    "created": 1697793486421,
+                                    "text": "反向代理",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwd5storoww0",
+                                            "created": 1697794159996,
+                                            "text": "反向代理则是代理服务器向客户端提供服务，将客户端的请求转发给服务器，并返回服务器的响应给客户端",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwd5tsfzcjs0",
+                                            "created": 1697794235652,
+                                            "text": "应用：反向代理的典型用途是将防火墙后面的服务器提供给  Internet  用户访问，对外都是透明的，访问者并不知道自己访问的是一个代理",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwd5udgl9sw0",
+                                            "created": 1697794281401,
+                                            "text": "反向代理主要用于解决负载均衡、安全防护等问题，同时也能提高访问速度",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwd5k9y15io0",
+                                    "created": 1697793490107,
+                                    "text": "正向代理和反向代理的主要区别在于代理的方向不同",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
@@ -560,21 +688,24 @@
                 "data": {
                     "id": "cwcymqvfdc80",
                     "created": 1697773935914,
-                    "text": "C++库"
+                    "text": "C++库",
+                    "expandState": "expand"
                 },
                 "children": [
                     {
                         "data": {
                             "id": "cwcyn0hinbk0",
                             "created": 1697773956841,
-                            "text": "nlohmann"
+                            "text": "nlohmann",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cwcyn5yngo80",
                                     "created": 1697773968761,
-                                    "text": "用于解析json的开源c++库"
+                                    "text": "用于解析json的开源c++库",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -582,7 +713,8 @@
                                 "data": {
                                     "id": "cwcynmbb5bs0",
                                     "created": 1697774004354,
-                                    "text": "优点"
+                                    "text": "优点",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -591,7 +723,8 @@
                                             "created": 1697774011025,
                                             "text": "只需导入头文件即可使用，方便整合到项目",
                                             "hyperlink": "https://json.nlohmann.me/api/basic_json/",
-                                            "hyperlinkTitle": ""
+                                            "hyperlinkTitle": "",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -614,14 +747,16 @@
                         "data": {
                             "id": "cwcyqt5h3vk0",
                             "created": 1697774254332,
-                            "text": "jwt_cpp"
+                            "text": "jwt_cpp",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cwcyqwj5vpk0",
                                     "created": 1697774261690,
-                                    "text": "一个基于c++实现的JWT库，提供了JWT（json web token）的生成、解析、验证功能"
+                                    "text": "一个基于c++实现的JWT库，提供了JWT（json web token）的生成、解析、验证功能",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -629,7 +764,8 @@
                                 "data": {
                                     "id": "cwcys9x8di80",
                                     "created": 1697774369203,
-                                    "text": "JWT"
+                                    "text": "JWT",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -640,7 +776,8 @@
                                             "layout_right_offset": {
                                                 "x": -5,
                                                 "y": 0
-                                            }
+                                            },
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -652,7 +789,8 @@
                                             "layout_right_offset": {
                                                 "x": -1,
                                                 "y": 5
-                                            }
+                                            },
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -662,7 +800,8 @@
                                             "created": 1697774648105,
                                             "text": "详细介绍",
                                             "hyperlink": "https://baijiahao.baidu.com/s?id=1765023612132805962&wfr=spider&for=pc",
-                                            "hyperlinkTitle": ""
+                                            "hyperlinkTitle": "",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -674,7 +813,8 @@
                         "data": {
                             "id": "cwd14gqbba80",
                             "created": 1697780966612,
-                            "text": "cgicc"
+                            "text": "cgicc",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -683,7 +823,8 @@
                                     "created": 1697780974123,
                                     "text": "一个C++语言实现的开源CGI库，采用LGPL授权协议",
                                     "hyperlink": "https://cloud.tencent.com/developer/article/1403327?areaSource=102001.8&traceId=hKligtxOWdEiW7wAGsFzh",
-                                    "hyperlinkTitle": ""
+                                    "hyperlinkTitle": "",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
