@@ -8,9 +8,25 @@
 4. 安装摄像头
 5. 安装cp2012驱动，链接USB转ttl转接线，打开串口（波特率设置115200）可以浏览系统的相关打印。
 
-简化后的工程
+## 简化后的编译命令
 
-![1697772317422](image/start/1697772317422.png)
+初次编译 
+
+#原始命令：`./build.sh init &&./build.sh`
+
+`./build.sh   c  `
+
+应用开发编译
+
+原始命令：`./build.sh clean app && ./build.sh app && ./build.sh  firmware`
+
+`./build.sh   app_auto c`
+
+驱动开发编译
+
+原始命令：`./bui d.sh clean driver &&./build.sh driver &&./build.sh irmware`
+
+`./build.sh   dri_auto c`
 
 ## Ngnix配置
 
@@ -242,6 +258,5 @@ nginxapplication live {
 **MIME类型定义文件** ，是一个记录所有可用MIME类型的文件 。
 
 MIME（Multipurpose Internet Mail Extensions）是一种用于描述和标记数据类型的标准，它包括了用于电子邮件和在互联网上的所有类型数据  。mime.types是nginx配置文件之一，它用于定义MIME类型和文件扩展名之间的映系  。
-
 
 ### gtest测试
