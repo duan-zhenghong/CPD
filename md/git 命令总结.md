@@ -81,8 +81,8 @@ git remote update # jieang
 ### clean
 
 ```bash
-git clean -df  # 清除当前目录下untrack的 文件夹(dir)和文件（file）
-git clean -f <path>  # 删除指定路径下的没有被track过的文件
+git clean -f  # 删除指定路径下的没有被track过的文件
+git clean -df #  连 untracked 的目录也一起删掉
 git clean -xf # 删除当前目录下所有没有track过的文件. 不管他是否是.gitignore文件里面指定的文件夹和文件.
 ```
 
