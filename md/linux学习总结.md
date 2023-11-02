@@ -1475,6 +1475,12 @@ disk usage
 du -sh   # 查看指定目录的大小，无参的情况下，表示查看当前目录的磁盘占用，-s表示仅显示总计
 ```
 
+## dmesg
+
+dmesg指令是一个在Linux系统中查看内核日志的实用工具。它允许我们查看系统内核的输出消息，包括引导信息、硬件检测、设备驱动程序和系统错误等。通过使用dmesg指令，我们可以追踪系统启动过程中的事件，排查故障和问题.
+
+## `dmesg`
+
 ## echo
 
 ```
@@ -1553,6 +1559,8 @@ id # 查看用户id 组id 用户组信息
 
 ## kill
 
+同类的还有pkill（与killall类似）、killall（killall 命令用于杀死指定名字的进程）命令，不需要查询进程id，可根据关键字杀死进程。
+
 ```
 kill -9 <pid> # 杀掉进程
 ```
@@ -1626,12 +1634,14 @@ mkdir -p parent/{1/{11,12,13},2/{21,22,23}}/son # 批量创建文件夹
 
 ## ps（Process Status）
 
+其他进程命令：htop(可视化)、pstree显示进程间的继承关系
+
 ```
 ps -ef |grep redis # 查找进程并筛选出有redis字样的进程
 ```
 
-> - -A 列出所有的进程
-> - -w 显示加宽可以显示较多的资讯
+> - -e 列出所有的进程
+> - -f 以完整的格式输出，常与 -e 一起使用
 > - -au 显示较详细的资讯
 > - -aux 显示所有包含其他使用者的行程
 > - au(x) 输出格式 :
@@ -2255,6 +2265,82 @@ ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub
 | patterns, pt      | 列出所有可用的模式           |
 | products, pd      | 列出所有可用的产品           |
 | what-provides, wp | 列出能够提供指定功能的软件包 |
+
+## ftp服务搭建
+
+FTP文件传送协议(File Transfer Protocol，简称FTP)，是一个用于从一台主机到另一台主机传输文件的协议
+
+### 安装ftp软件
+
+**Linux下有许多FTP服务器软件**：Proftpd、Wu-FTP、vsftpd
+
+```
+# Ubuntu安装vsftp
+sudo apt install vsftpd
+# 查看安装版本
+vsftpd --version
+```
+
+### 配置FTP服务
+
+```
+sudo useradd -m ftp_jihan # 添加用户
+sudo passwd ftp_jihan #设置密码
+# 在home目录下创建ftp_home文件夹
+```
+
+```
+# 配置vsftpd.conf文件
+sudo vim /etc/vsftpd.conf
+```
+
+再文件后面添加两行信息
+
+local_root=/home/ftp_home  # 配置ftp登录后所在的目录
+
+allow_writeable_chroot=YES
+
+其他选项配置
+
+chroot_local_user=YES
+
+listen=YES
+
+listen_ipv6=NO
+
+local_enable=YES #允许本地用户登录
+
+write_enable=YES #允许用户有修改文件权限
+
+### 启动ftp服务
+
+```
+sudo service vsftpd start # 启动
+sudo systemctl restart vsftpd # 重启
+sudo /etc/init.d/vsftpd restart # 重启ftp服务
+sudo systemctl enable vsftpd # 开机启动
+sudo netstat -antup | grep ftp # 确认服务是否启动
+```
+
+### 登录ftp
+
+```
+ftp 192.168.137.3 # 登录ftp服务器，后面为服务器IP地址
+```
+
+### windows直接网络映射访问ftp服务器文件
+
+打开我的电脑，鼠标右键选择“添加一个网络位置（L）”
+
+点击下一步
+
+点击“选择自定义网络位置”后，点击下一步
+
+输入 ftp://[ubuntu的ip]后，点击下一步
+
+取消勾选匿名登陆，在用户名栏输入你要登陆的用户名，点击下一步，默认选择直到完成
+
+文件夹中看到映射的文件夹，双击输入用户名密码，就可以访问了
 
 # 参考
 

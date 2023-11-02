@@ -10,7 +10,7 @@
 
 ## 简化后的编译命令
 
-初次编译 
+初次编译
 
 #原始命令：`./build.sh init &&./build.sh`
 
@@ -260,3 +260,153 @@ nginxapplication live {
 MIME（Multipurpose Internet Mail Extensions）是一种用于描述和标记数据类型的标准，它包括了用于电子邮件和在互联网上的所有类型数据  。mime.types是nginx配置文件之一，它用于定义MIME类型和文件扩展名之间的映系  。
 
 ### gtest测试
+
+# web后端独立编译
+
+安装交叉编译工具
+
+```
+apt install gcc-arm-linux-gnueabihf  #安装gcc
+apt install g++-arm-linux-gnueabihf  #安装g++
+ 
+apt install gcc-arm-linux-gnueabi
+```
+
+# 程序烧录
+
+1、usb烧录驱动安装
+
+2、断电情况下，长按mask按键，接入type-c电源。然后使用usb方式，能识别出来，就可以烧录
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 本地调试尝试
+
+基于commitid：4d1cffd9938bbc71bd1daedef1829c62d66e3647
+
+```
+diff --git a/project/app/ipcweb/ipcweb-backend/cmake/toolchains/linux-arm.cmake b/project/app/ipcweb/ipcweb-backend/cmake/toolchains/linux-arm.cmake
+index 3fbb00064..33794ef38 100644
+--- a/project/app/ipcweb/ipcweb-backend/cmake/toolchains/linux-arm.cmake
++++ b/project/app/ipcweb/ipcweb-backend/cmake/toolchains/linux-arm.cmake
+@@ -5,7 +5,8 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
+ set(BR2_SDK_PATH /work/linux/rk1808/buildroot/output/rockchip_puma/host)
+ 
+ set(CMAKE_C_COMPILER   ${BR2_SDK_PATH}/bin/arm-linux-gcc)
+-set(CMAKE_CXX_COMPILER ${BR2_SDK_PATH}/bin/arm-linux-g++)
++# set(CMAKE_CXX_COMPILER ${BR2_SDK_PATH}/bin/arm-linux-g++)
++set(CMAKE_CXX_COMPILER /usr/bin/arm-linux-gnueabihf-g++)
+ 
+ set(BR2_SYSROOT ${BR2_SDK_PATH}/arm-buildroot-linux-gnueabihf/sysroot)
+ set(CMAKE_SYSROOT ${BR2_SYSROOT})
+diff --git a/project/app/ipcweb/ipcweb-backend/ipcweb-env-arm/etc4oem/nginx/nginx.conf b/project/app/ipcweb/ipcweb-backend/ipcweb-env-arm/etc4oem/nginx/nginx.conf
+index b58a7c583..43b1c5e02 100644
+--- a/project/app/ipcweb/ipcweb-backend/ipcweb-env-arm/etc4oem/nginx/nginx.conf
++++ b/project/app/ipcweb/ipcweb-backend/ipcweb-env-arm/etc4oem/nginx/nginx.conf
+@@ -40,29 +40,29 @@ http {
+     gzip_min_length 20;
+     gzip_comp_level 5;
+     gzip_vary on;
+-    gzip_types text/html application/javascript application/x-javascript text/javascript image/png image/x-icon;
++    gzip_types application/javascript application/x-javascript text/javascript image/png image/x-icon;
+     gzip_static on;
+     gzip_buffers 2 4k;
+     gzip_http_version 1.1;
+ 
+     server {
+-        listen       80;
++        listen       88;
+         server_name  localhost;
+ 
+        location /live {
+-               flv_live on;
++               # flv_live on;
+        }
+         #charset koi8-r;
+ 
+         #access_log  logs/host.access.log  main;
+ 
+         location / {
+-            root   /oem/usr/www;
++            root   /home/jihan/repo/rv1106_20230929/output/out/app_out/usr/www;
+             index  index.html index.htm;
+         }
+ 
+        location ~* \.(mp4|bmp)$  {
+-           root /oem/usr/www;
++           root /home/jihan/repo/rv1106_20230929/output/out/app_out/usr/www;
+             if ($request_uri ~* view$) {
+                add_header Content-Disposition inline;
+            }
+@@ -83,10 +83,10 @@ http {
+ 
+         location /cgi-bin/ {
+             gzip           off;
+-            root           /oem/usr/www;
++            root           /home/jihan/repo/rv1106_20230929/output/out/app_out/usr/www;
+             fastcgi_pass   unix:/run/fcgiwrap.sock;
+             fastcgi_index  entry.cgi;
+-            fastcgi_param  DOCUMENT_ROOT     /oem/usr/www/cgi-bin;
++            fastcgi_param  DOCUMENT_ROOT     /home/jihan/repo/rv1106_20230929/output/out/app_out/usr/www/cgi-bin;
+             fastcgi_param  SCRIPT_NAME       /entry.cgi;
+             include        fastcgi_params;
+             set $path_info "";
+@@ -142,22 +142,22 @@ http {
+ 
+ }
+ 
+-rtmp {
+-    server {
+-        listen 1935;
+-        chunk_size 4096;
+-        #allow publish 127.0.0.1;
+-        #deny publish all;
+-
+-        application live {
+-            live on;
+-        }
+-
+-        #application hls {
+-        #    live on;
+-        #    hls on;
+-        #    hls_path /tmp/hls;
+-        #    hls_fragment 1s;
+-        #}
+-    }
+-}
++# rtmp {
++#     server {
++#         listen 1935;
++#         chunk_size 4096;
++#         #allow publish 127.0.0.1;
++#         #deny publish all;
++
++#         application live {
++#             live on;
++#         }
++
++#         #application hls {
++#         #    live on;
++#         #    hls on;
++#         #    hls_path /tmp/hls;
++#         #    hls_fragment 1s;
++#         #}
++#     }
++# }
+```

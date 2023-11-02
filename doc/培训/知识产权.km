@@ -1,0 +1,258 @@
+{
+    "root": {
+        "data": {
+            "id": "cwnchy63i740",
+            "created": 1698828655081,
+            "text": "知识产权"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cwnci3mbjf40",
+                    "created": 1698828666946,
+                    "text": "竞品分析",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwncic9av3c0",
+                            "created": 1698828685750,
+                            "text": "日常工作关注",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwncijmt4w80",
+                                    "created": 1698828701804,
+                                    "text": "行业动态",
+                                    "expandState": "expand",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncimgq7ds0",
+                                    "created": 1698828707967,
+                                    "text": "知名会议",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncjduwbso0",
+                                    "created": 1698828767597,
+                                    "text": "商标和著作权信息动态",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwncjv5wr140",
+                                            "created": 1698828805268,
+                                            "text": "反应企业的产业走向",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwnciqhr7kg0",
+                            "created": 1698828716736,
+                            "text": "购买竞品",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwncixqy3io0",
+                                    "created": 1698828732529,
+                                    "text": "反向工程",
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwncms661mg0",
+                            "created": 1698829033845,
+                            "text": "为什么要做竞品分析",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwncnooqthc0",
+                                    "created": 1698829104626,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncnphpwow0",
+                                    "created": 1698829106378,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncnput3eo0",
+                                    "created": 1698829107169,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncnpxj88o0",
+                                    "created": 1698829107334,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncnq1374g0",
+                                    "created": 1698829107549,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncnq4kngg0",
+                                    "created": 1698829107760,
+                                    "text": "topic",
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwncp9qmibc0",
+                            "created": 1698829228816,
+                            "text": "如何做竞品分析"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwncpd1x0ns0",
+                                    "created": 1698829236029,
+                                    "text": "topic"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwncpkcy3v40",
+                                            "created": 1698829251934,
+                                            "text": "明确分析的目的"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwncq2rqhy00",
+                                                    "created": 1698829292010,
+                                                    "text": "已经成型的产品"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwncq9deptc0",
+                                                            "created": 1698829306381,
+                                                            "text": "分析竞品，优化改造自己产品"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwncqoku5l40",
+                                                    "created": 1698829339482,
+                                                    "text": "准备要做的产品"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwncqux074w0",
+                                                            "created": 1698829353278,
+                                                            "text": "创新点"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncpdrt09s0",
+                                    "created": 1698829237595,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncpdvz2w00",
+                                    "created": 1698829237847,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncpdzinjc0",
+                                    "created": 1698829238061,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwncpe5v2zc0",
+                                    "created": 1698829238445,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwncmdk8j200",
+                    "created": 1698829002044,
+                    "text": "topic",
+                    "layout": null
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

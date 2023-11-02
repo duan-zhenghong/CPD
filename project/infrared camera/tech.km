@@ -85,30 +85,57 @@
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "cwc1go10n540",
-                                                    "created": 1697680362910,
-                                                    "text": "1、客户端请求 -> nginx ->应用服务器（tomcat/django等）",
+                                                    "id": "cwmf9x42y1k0",
+                                                    "created": 1698734929242,
+                                                    "text": "交互",
                                                     "expandState": "expand"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1go10n540",
+                                                            "created": 1697680362910,
+                                                            "text": "1、客户端请求 -> nginx ->应用服务器（tomcat/django等）",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1jowjab40",
+                                                            "created": 1697680599908,
+                                                            "text": "2、应用服务器执行应用，将动态的内容转化为静态的内容",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cwc1jq5coig0",
+                                                            "created": 1697680602618,
+                                                            "text": "3、应用服务器(静态内容) -> nginx -> 客户端展示",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "data": {
-                                                    "id": "cwc1jowjab40",
-                                                    "created": 1697680599908,
-                                                    "text": "2、应用服务器执行应用，将动态的内容转化为静态的内容",
-                                                    "expandState": "expand"
+                                                    "id": "cwmfa8xbp6g0",
+                                                    "created": 1698734954955,
+                                                    "text": "模块"
                                                 },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cwc1jq5coig0",
-                                                    "created": 1697680602618,
-                                                    "text": "3、应用服务器(静态内容) -> nginx -> 客户端展示",
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwmfajog0nk0",
+                                                            "created": 1698734978363,
+                                                            "text": "nginx-http-flv-module，是在nginx-rtmp-module基础上开发的一个直播模块"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -243,7 +270,7 @@
                                 "x": 430,
                                 "y": 118
                             },
-                            "expandState": "expand"
+                            "expandState": "collapse"
                         },
                         "children": [
                             {
@@ -310,7 +337,7 @@
                             "id": "cwc2vxf7zwo0",
                             "created": 1697684379932,
                             "text": "CGI",
-                            "expandState": "expand"
+                            "expandState": "collapse"
                         },
                         "children": [
                             {
@@ -594,7 +621,7 @@
                             "id": "cwd5juxksdc0",
                             "created": 1697793457428,
                             "text": "代理",
-                            "expandState": "expand"
+                            "expandState": "collapse"
                         },
                         "children": [
                             {
@@ -686,10 +713,173 @@
             },
             {
                 "data": {
+                    "id": "cwlob4ffcbk0",
+                    "created": 1698658853562,
+                    "text": "socket编程"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlobaqrnq80",
+                            "created": 1698658867309,
+                            "text": "topic"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwlobbw42yo0",
+                            "created": 1698658869809,
+                            "text": "基本函数"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlohzgukps0",
+                                    "created": 1698659391315,
+                                    "text": "socket()函数，创建socket，确定socket的属性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi02ib9k0",
+                                    "created": 1698659392623,
+                                    "text": "bind()函数，服务器端使用bind()绑定特定的IP和端口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi05jseo0",
+                                    "created": 1698659392807,
+                                    "text": "connect()函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi0arh280",
+                                    "created": 1698659393122,
+                                    "text": "listen() 函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi47yifs0",
+                                    "created": 1698659401660,
+                                    "text": "accept() 函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi4dvom00",
+                                    "created": 1698659402018,
+                                    "text": "read() write() send() recv()函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi4k64ns0",
+                                    "created": 1698659402398,
+                                    "text": "close()函数"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloi4nbr6w0",
+                                    "created": 1698659402589,
+                                    "text": "字节序转换（hton）"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwloesyifu80",
+                            "created": 1698659142052,
+                            "text": "进程之间通信"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwloeywk8aw0",
+                                    "created": 1698659154994,
+                                    "text": "无名管道（ pipe ）：管道是一种半双工的通信方式，数据只能单向流动，而且只能在具有亲缘关系的进程间使用。进程的亲缘关系通常是指父子进程关系。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwloezzbs000",
+                                    "created": 1698659157338,
+                                    "text": "高级管道（popen）：将另一个程序当做一个新的进程在当前程序进程中启动，则它算是当前程序的子进程，这种方式我们成为高级管道方式。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof06kqg00",
+                                    "created": 1698659157777,
+                                    "text": "有名管道 （named pipe） ： 有名管道也是半双工的通信方式，但是它允许无亲缘关系进程间的通信。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof0k4iao0",
+                                    "created": 1698659158596,
+                                    "text": "消息队列（ message queue ） ： 消息队列是由消息的链表，存放在内核中并由消息队列标识符标识。消息队列克服了信号传递信息少、管道只能承载无格式字节流以及缓冲区大小受限等缺点。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof0nmed40",
+                                    "created": 1698659158807,
+                                    "text": "信号量（ semophore ） ： 信号量是一个计数器，可以用来控制多个进程对共享资源的访问。它常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof0qzcuo0",
+                                    "created": 1698659159011,
+                                    "text": "信号 （ sinal ） ： 信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof0ubcuo0",
+                                    "created": 1698659159212,
+                                    "text": "共享内存（ shared memory ） ：共享内存就是映射一段能被其他进程所访问的内存，这段共享内存由一个进程创建，但多个进程都可以访问。共享内存是最快的 IPC 方式，它是针对其他进程间通信方式运行效率低而专门设计的。它往往与其他通信机制，如信号两，配合使用，来实现进程间的同步和通信。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlof0xqi1k0",
+                                    "created": 1698659159419,
+                                    "text": "套接字（ socket ） ： 套接口也是一种进程间通信机制，与其他通信机制不同的是，它可用于不同机器间的进程通信。"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
                     "id": "cwcymqvfdc80",
                     "created": 1697773935914,
                     "text": "C++库",
-                    "expandState": "expand"
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
