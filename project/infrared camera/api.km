@@ -1,0 +1,677 @@
+{
+    "root": {
+        "data": {
+            "id": "cwote8tazyo0",
+            "created": 1698977883621,
+            "text": "IPC_REST_API",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cwotei104zc0",
+                    "created": 1698977903677,
+                    "text": "network",
+                    "priority": 1,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cwotja6d1eo0",
+                    "created": 1698978278408,
+                    "text": "network-ntp",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwotp53blu00",
+                            "created": 1698978737525,
+                            "text": "network.ntp",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjd83zeo0",
+                    "created": 1698978285044,
+                    "text": "network-ddns",
+                    "priority": null,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cwotjdeawlc0",
+                    "created": 1698978285418,
+                    "text": "network-pppoe",
+                    "priority": 1,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cwotjdk192g0",
+                    "created": 1698978285765,
+                    "text": "network-port",
+                    "priority": 1,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cwotjdmjrj40",
+                    "created": 1698978285917,
+                    "text": "storage",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwotnmv3xbk0",
+                            "created": 1698978619482,
+                            "text": "storage",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotnqur94w0",
+                            "created": 1698978628168,
+                            "text": "storage.0",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotnr26qw00",
+                            "created": 1698978628617,
+                            "text": "storage.1",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov45j5yps0",
+                            "created": 1698982735055,
+                            "text": "storage.2",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjdpq8vc0",
+                    "created": 1698978286109,
+                    "text": "video",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwotn0e4f3k0",
+                            "created": 1698978570566,
+                            "text": "video.0",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotn26kgg00",
+                            "created": 1698978574463,
+                            "text": "video.1",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov50kcj480",
+                            "created": 1698982802607,
+                            "text": "video.2",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotnb2q5mg0",
+                            "created": 1698978593821,
+                            "text": "video.jpeg",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov51hkixk0",
+                            "created": 1698982804616,
+                            "text": "video.source",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov6gid2b40",
+                            "created": 1698982915680,
+                            "text": "region_clip.1",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov863wx280",
+                            "created": 1698983049767,
+                            "text": "ivs",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjum8qfk0",
+                    "created": 1698978322904,
+                    "text": "audio",
+                    "priority": 1,
+                    "layout": null,
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwov1ihhyz40",
+                            "created": 1698982528160,
+                            "text": "audio.0",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjuovjx40",
+                    "created": 1698978323063,
+                    "text": "stream-url",
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cwotjus73f40",
+                    "created": 1698978323264,
+                    "text": "image",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwouhg98oo00",
+                            "created": 1698980956024,
+                            "text": "isp",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhhe5g2o0",
+                            "created": 1698980958498,
+                            "text": "isp.0.adjustment",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhhv81gg0",
+                            "created": 1698980959530,
+                            "text": "isp.0.exposure",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhi3fgdk0",
+                            "created": 1698980960026,
+                            "text": "isp.0.night_to_day",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhicbxc80",
+                            "created": 1698980960564,
+                            "text": "isp.0.blc",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhictyhs0",
+                            "created": 1698980960595,
+                            "text": "isp.0.white_blance",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhidefts0",
+                            "created": 1698980960629,
+                            "text": "isp.0.enhancement",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhie2wk00",
+                            "created": 1698980960670,
+                            "text": "isp.0.video_adjustment",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhiem01k0",
+                            "created": 1698980960702,
+                            "text": "isp.0.auto_focus",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhif3ils0",
+                            "created": 1698980960732,
+                            "text": "isp.1.night_to_day",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov2928brc0",
+                            "created": 1698982586010,
+                            "text": "isp.1.adjustment",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov2s6g78g0",
+                            "created": 1698982627624,
+                            "text": "isp.1.exposure",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhifmywg0",
+                            "created": 1698980960764,
+                            "text": "isp.1.blc",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhifzn6o0",
+                            "created": 1698980960786,
+                            "text": "isp.1.white_blance",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouhiguqj40",
+                            "created": 1698980960838,
+                            "text": "isp.1.enhancement",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouild2pls0",
+                            "created": 1698981045504,
+                            "text": "isp.1.video_adjustment",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwouim2gi2g0",
+                            "created": 1698981047039,
+                            "text": "isp.1.auto_focus",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjuvkv8w0",
+                    "created": 1698978323468,
+                    "text": "system",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwouadlkrcg0",
+                            "created": 1698980401690,
+                            "text": "capability.video",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr6akoe80",
+                            "created": 1698978896869,
+                            "text": "capability.image_enhancement",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr5fiza80",
+                            "created": 1698978894991,
+                            "text": "capability.image_adjustment",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr68bid40",
+                            "created": 1698978896732,
+                            "text": "capability.image_blc",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr6h00vc0",
+                            "created": 1698978897257,
+                            "text": "capability.image_exposure",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr6mfb0o0",
+                            "created": 1698978897585,
+                            "text": "capability.image_night_to_day",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr8yrtsw0",
+                            "created": 1698978902685,
+                            "text": "capability.image_video_adjustment",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotr9g4xew0",
+                            "created": 1698978903735,
+                            "text": "capability.image_white_blance",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoulaocdww0",
+                            "created": 1698981257333,
+                            "text": "user.0",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov4hysw140",
+                            "created": 1698982762122,
+                            "text": "system.device_info",
+                            "priority": 1,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotjuyzupk0",
+                    "created": 1698978323675,
+                    "text": "osd",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwoto3e1kt40",
+                            "created": 1698978655456,
+                            "text": "osd.common",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto6pw1mg0",
+                            "created": 1698978662702,
+                            "text": "osd.0",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto6sw5080",
+                            "created": 1698978662884,
+                            "text": "osd.1",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto6wnc8w0",
+                            "created": 1698978663111,
+                            "text": "osd.2",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto7nqqk00",
+                            "created": 1698978664749,
+                            "text": "osd.3",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto811nts0",
+                            "created": 1698978665554,
+                            "text": "osd.4",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto8cpz6g0",
+                            "created": 1698978666260,
+                            "text": "osd.5",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwoto8j4l880",
+                            "created": 1698978666647,
+                            "text": "osd.6",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotkbnv91k0",
+                    "created": 1698978360007,
+                    "text": "roi",
+                    "priority": 1,
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwov373o1ls0",
+                            "created": 1698982660108,
+                            "text": "roi.0",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov373oiu80",
+                            "created": 1698982660108,
+                            "text": "roi.1",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov373oio80",
+                            "created": 1698982660108,
+                            "text": "roi.2",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov373nzag0",
+                            "created": 1698982660108,
+                            "text": "roi.3",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov373nyu00",
+                            "created": 1698982660108,
+                            "text": "roi.4",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwov373obuw0",
+                            "created": 1698982660108,
+                            "text": "roi.5",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotkbqbk9s0",
+                    "created": 1698978360156,
+                    "text": "event",
+                    "priority": 1,
+                    "layout": null,
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwov1tyym140",
+                            "created": 1698982553161,
+                            "text": "event.regional_invasion",
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwotkbt5ytk0",
+                    "created": 1698978360328,
+                    "text": "peripherals",
+                    "layout": null
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
