@@ -1,3 +1,11 @@
+<font face="黑体">黑体字</font>
+<font face="微软雅黑">微软雅黑</font>
+<font face="STCAIYUN">华文彩云</font>
+<font color=blue>蓝色</font>
+<font color=#008000>绿色</font>
+<font color=Red>红色</font>
+<font size=5>尺寸</font>
+
 # infrared IP camera task track
 
 ## 紧急事务
@@ -20,6 +28,8 @@ SDK for linux
 
 ## 短期待办
 
+* [ ] **sdk 和 REST api 需求对比**
+
 ## 长期待办
 
 # 工作记录
@@ -28,7 +38,6 @@ SDK for linux
 
 * [X] 原始视频配置文件
 * [ ] 客户端与服务端的是通信数据结构定义
-
 * [ ] 推流过程梳理
 
 周二
