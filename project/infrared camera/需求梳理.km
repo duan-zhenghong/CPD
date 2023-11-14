@@ -3231,9 +3231,90 @@
                                     "created": 1699950016758,
                                     "text": "fpga",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "collapse"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbff40",
+                                            "created": 1699956272485,
+                                            "text": "iGain"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbf0g0",
+                                            "created": 1699956272485,
+                                            "text": "iImage_flip"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbly80",
+                                            "created": 1699956272485,
+                                            "text": "iDetector_bias_A"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbluo0",
+                                            "created": 1699956272485,
+                                            "text": "iDetector_bias_B"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbv280",
+                                            "created": 1699956272485,
+                                            "text": "iDetector_bias_C"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbtq80",
+                                            "created": 1699956272485,
+                                            "text": "iDetector_bias_D"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbto00",
+                                            "created": 1699956272485,
+                                            "text": "iIntegration_time"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbis00",
+                                            "created": 1699956272485,
+                                            "text": "iFrame_rate_T3"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbo4o0",
+                                            "created": 1699956272485,
+                                            "text": "iFrame_rate_T9"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7egbzw80",
+                                            "created": 1699956272486,
+                                            "text": "iFrame_rate_T10"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "data": {
@@ -3241,19 +3322,237 @@
                                     "created": 1699950020220,
                                     "text": "movement",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "collapse"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr75u00",
+                                            "created": 1699956312325,
+                                            "text": "iAtmosphereTemp"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7gp40",
+                                            "created": 1699956312325,
+                                            "text": "iReflectedTemp"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7djk0",
+                                            "created": 1699956312325,
+                                            "text": "iEmissivity"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7ioo0",
+                                            "created": 1699956312325,
+                                            "text": "iRelativeHumidity"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7d280",
+                                            "created": 1699956312325,
+                                            "text": "sManualCorrect"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr71bs0",
+                                            "created": 1699956312325,
+                                            "text": "sAutoCorrect"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7dyg0",
+                                            "created": 1699956312325,
+                                            "text": "iIntervalTime"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7i3k0",
+                                            "created": 1699956312325,
+                                            "text": "iTempThresh"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr7exc0",
+                                            "created": 1699956312325,
+                                            "text": "sExCorrect"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg7wr75lk0",
+                                            "created": 1699956312325,
+                                            "text": "sBlindFix"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "data": {
                                     "id": "cwydzpwtkj40",
                                     "created": 1699950028294,
-                                    "text": "topic",
+                                    "text": "display",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "collapse"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfgy00",
+                                            "created": 1699956342390,
+                                            "text": "iZoom"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfqow0",
+                                            "created": 1699956342391,
+                                            "text": "iRotation"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfsq00",
+                                            "created": 1699956342391,
+                                            "text": "sBrightness"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfr1c0",
+                                            "created": 1699956342391,
+                                            "text": "iBrightnessThresh"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfz8g0",
+                                            "created": 1699956342391,
+                                            "text": "sContrast"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfrdk0",
+                                            "created": 1699956342391,
+                                            "text": "iContrastThresh"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfmx40",
+                                            "created": 1699956342391,
+                                            "text": "sDenoise"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akg0eo0",
+                                            "created": 1699956342391,
+                                            "text": "iDenoiseThresh"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfvu00",
+                                            "created": 1699956342391,
+                                            "text": "iEnhanceLevel"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfl2w0",
+                                            "created": 1699956342391,
+                                            "text": "sFalseColor"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfkbs0",
+                                            "created": 1699956342391,
+                                            "text": "sEdgeEnhance"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfkao0",
+                                            "created": 1699956342391,
+                                            "text": "iFrameRate"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfza80",
+                                            "created": 1699956342391,
+                                            "text": "sDisplayArea"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfu4w0",
+                                            "created": 1699956342391,
+                                            "text": "iHighTemp"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfktc0",
+                                            "created": 1699956342391,
+                                            "text": "iLowTemp"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfjug0",
+                                            "created": 1699956342391,
+                                            "text": "sHighlightBlind"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwyg8akfqao0",
+                                            "created": 1699956342391,
+                                            "text": "sDisplayTemp"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
