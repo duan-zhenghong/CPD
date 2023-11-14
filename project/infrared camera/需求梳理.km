@@ -13,7 +13,7 @@
                     "created": 1699925919422,
                     "text": "REST API",
                     "layout": null,
-                    "expandState": "expand"
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
@@ -71,7 +71,7 @@
                                     "id": "cwy6d6n4hy80",
                                     "created": 1699928514568,
                                     "text": "OSD配置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -102,7 +102,7 @@
                                     "id": "cwy6d6n4l2o0",
                                     "created": 1699928514568,
                                     "text": "网络参数",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -133,7 +133,7 @@
                                     "id": "cwy6d6n4pvc0",
                                     "created": 1699928514568,
                                     "text": "编码参数配置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -164,7 +164,7 @@
                                     "id": "cwy6d6n4jk80",
                                     "created": 1699928514568,
                                     "text": "图像显示设置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -225,7 +225,7 @@
                                     "id": "cwy6d6n4a3k0",
                                     "created": 1699928514568,
                                     "text": "热像显示相关配置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -279,7 +279,7 @@
                                     "text": "用户管理",
                                     "layout": null,
                                     "progress": 9,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -320,7 +320,7 @@
                                     "created": 1699928279385,
                                     "text": "系统设置",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -361,7 +361,7 @@
                                     "created": 1699928280540,
                                     "text": "存储设备管理",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -382,7 +382,7 @@
                                     "created": 1699928296641,
                                     "text": "机芯设置",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -417,7 +417,7 @@
                     "created": 1699925964924,
                     "text": "SDK",
                     "layout": null,
-                    "expandState": "expand"
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
@@ -435,7 +435,7 @@
                                     "created": 1699927852004,
                                     "text": "初始化",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -456,7 +456,7 @@
                                     "created": 1699927852004,
                                     "text": "登陆",
                                     "layout": null,
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "progress": 9
                                 },
                                 "children": [
@@ -572,7 +572,7 @@
                                     "created": 1699927852004,
                                     "text": "系统参数设置",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -603,7 +603,7 @@
                                     "created": 1699927852004,
                                     "text": "网络参数设置",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -774,7 +774,7 @@
                                     "created": 1699927852004,
                                     "text": "用户信息设定",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -836,7 +836,7 @@
                                     "created": 1699928020870,
                                     "text": "系统控制",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -917,7 +917,7 @@
                                     "created": 1699928020870,
                                     "text": "图像控制",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -1059,7 +1059,7 @@
                                     "created": 1699928020870,
                                     "text": "系统运行信息",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -1160,7 +1160,7 @@
                                     "created": 1699928020870,
                                     "text": "客户端录像抓图控制",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -1213,7 +1213,7 @@
                             "id": "cwy6euzs0m00",
                             "created": 1699928645940,
                             "text": "配置文件参数列表",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -1233,7 +1233,7 @@
                                     "id": "cwotja6d1eo0",
                                     "created": 1698978278408,
                                     "text": "network-ntp",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1287,7 +1287,7 @@
                                     "id": "cwotjdmjrj40",
                                     "created": 1698978285917,
                                     "text": "storage",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1339,7 +1339,7 @@
                                     "id": "cwotjdpq8vc0",
                                     "created": 1698978286109,
                                     "text": "video",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1425,7 +1425,7 @@
                                     "text": "audio",
                                     "priority": 1,
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -1455,7 +1455,7 @@
                                     "id": "cwotjus73f40",
                                     "created": 1698978323264,
                                     "text": "image",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1638,7 +1638,7 @@
                                     "id": "cwotjuvkv8w0",
                                     "created": 1698978323468,
                                     "text": "system",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1750,7 +1750,7 @@
                                     "id": "cwotjuyzupk0",
                                     "created": 1698978323675,
                                     "text": "osd",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1842,7 +1842,7 @@
                                     "created": 1698978360007,
                                     "text": "roi",
                                     "priority": 1,
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -1915,7 +1915,7 @@
                                     "text": "event",
                                     "priority": 1,
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -1947,7 +1947,7 @@
                             "id": "cwy719txq6g0",
                             "created": 1699930402250,
                             "text": "system 系统",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -1956,7 +1956,7 @@
                                     "id": "cwy6f67flnk0",
                                     "created": 1699928670348,
                                     "text": "设置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2110,7 +2110,7 @@
                                     "id": "cwy7bctlifc0",
                                     "created": 1699931192402,
                                     "text": "读取信息",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2232,7 +2232,7 @@
                                     "id": "cwy7j5i3og00",
                                     "created": 1699931803382,
                                     "text": "删除",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2255,7 +2255,7 @@
                             "id": "cwy891f53ow0",
                             "created": 1699933831965,
                             "text": "video 视频",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -2264,7 +2264,7 @@
                                     "id": "cwyamkmglp40",
                                     "created": 1699940534720,
                                     "text": "读取",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2482,7 +2482,7 @@
                                     "id": "cwyamqgh54g0",
                                     "created": 1699940547419,
                                     "text": "设置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2719,7 +2719,7 @@
                             "id": "cwyaztm3f3s0",
                             "created": 1699941573023,
                             "text": "storage 存储",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -2728,7 +2728,7 @@
                                     "id": "cwyb083xwew0",
                                     "created": 1699941604577,
                                     "text": "读取",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2812,7 +2812,7 @@
                                     "id": "cwyb0sbh8lc0",
                                     "created": 1699941648568,
                                     "text": "设置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -2924,7 +2924,7 @@
                             "id": "cwyc703bsns0",
                             "created": 1699944956785,
                             "text": "network",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -2933,7 +2933,7 @@
                                     "id": "cwyccdxaq000",
                                     "created": 1699945378716,
                                     "text": "network",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -3221,7 +3221,8 @@
                             "created": 1699950010911,
                             "text": "infrared",
                             "expandState": "expand",
-                            "layout": null
+                            "layout": null,
+                            "progress": 5
                         },
                         "children": [
                             {
@@ -4345,7 +4346,7 @@
                             "created": 1699952634832,
                             "text": "event",
                             "note": "通道如何规划？",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -4354,7 +4355,7 @@
                                     "id": "cwyf3o3utu00",
                                     "created": 1699953158933,
                                     "text": "读取",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
@@ -4504,7 +4505,7 @@
                                     "id": "cwyf3tzv8m00",
                                     "created": 1699953171752,
                                     "text": "设置",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "layout": null
                                 },
                                 "children": [
