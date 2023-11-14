@@ -2887,7 +2887,7 @@
                         "data": {
                             "id": "cwyc5g7uc5c0",
                             "created": 1699944835158,
-                            "text": "roi",
+                            "text": "roi（region of interest）",
                             "priority": 1,
                             "resource": [],
                             "layout": null,
@@ -2911,7 +2911,7 @@
                         "data": {
                             "id": "cwyc6qb2zzc0",
                             "created": 1699944935486,
-                            "text": "osd",
+                            "text": "osd（on-screen display）",
                             "priority": 1,
                             "resource": [],
                             "layout": null,
