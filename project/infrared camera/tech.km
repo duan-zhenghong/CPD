@@ -1021,6 +1021,32 @@
                         ]
                     }
                 ]
+            },
+            {
+                "data": {
+                    "id": "cwz1rphaot40",
+                    "created": 1700017107080,
+                    "text": "协议"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwz1ru9w5ig0",
+                            "created": 1700017117516,
+                            "text": "rtmp"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwz1rxc2nbs0",
+                                    "created": 1700017124178,
+                                    "text": "RTMP 是应用层协议，要靠传输层协议（通常是TCP）来提供可靠传输，传输层建立连接之后，RTMP 也要通过 “握手” 来建立 RTMP connection。"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

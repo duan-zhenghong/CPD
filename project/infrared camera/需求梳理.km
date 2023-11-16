@@ -13,7 +13,7 @@
                     "created": 1699925919422,
                     "text": "REST API",
                     "layout": null,
-                    "expandState": "collapse"
+                    "expandState": "expand"
                 },
                 "children": [
                     {
@@ -31,7 +31,8 @@
                                     "created": 1699928436578,
                                     "text": "流媒体信息获取",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "progress": 9
                                 },
                                 "children": []
                             },
@@ -56,16 +57,6 @@
                             "layout": null
                         },
                         "children": [
-                            {
-                                "data": {
-                                    "id": "cwy6d6n3ne00",
-                                    "created": 1699928514567,
-                                    "text": "参数获取和配置",
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
                             {
                                 "data": {
                                     "id": "cwy6d6n4hy80",
@@ -417,7 +408,7 @@
                     "created": 1699925964924,
                     "text": "SDK",
                     "layout": null,
-                    "expandState": "collapse"
+                    "expandState": "expand"
                 },
                 "children": [
                     {
@@ -456,7 +447,7 @@
                                     "created": 1699927852004,
                                     "text": "登陆",
                                     "layout": null,
-                                    "expandState": "expand",
+                                    "expandState": "collapse",
                                     "progress": 9
                                 },
                                 "children": [
@@ -491,7 +482,7 @@
                             "id": "cwy64q9j2bc0",
                             "created": 1699927852004,
                             "text": "码流连接",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "layout": null
                         },
                         "children": [
@@ -511,7 +502,8 @@
                                     "created": 1699927945236,
                                     "text": "StreamConnect\t码流链接",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "progress": 1
                                 },
                                 "children": []
                             },
@@ -541,7 +533,8 @@
                                     "created": 1699927945237,
                                     "text": "SetTransConf\t设置传输参数",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "progress": 9
                                 },
                                 "children": []
                             },
@@ -603,7 +596,7 @@
                                     "created": 1699927852004,
                                     "text": "网络参数设置",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "collapse"
                                 },
                                 "children": [
                                     {
@@ -632,7 +625,8 @@
                                             "created": 1699927963548,
                                             "text": "SetPPPoE\t设置网络 PPPoE 参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -642,7 +636,8 @@
                                             "created": 1699927963548,
                                             "text": "GetPPPoE\t获取 PPPoE 参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -652,7 +647,8 @@
                                             "created": 1699927963548,
                                             "text": "SetFTP\t设置 FTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -662,7 +658,8 @@
                                             "created": 1699927963548,
                                             "text": "GetFTP\t获取 FTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -672,7 +669,8 @@
                                             "created": 1699927963548,
                                             "text": "SetNTP\t设置 NTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -682,7 +680,8 @@
                                             "created": 1699927963548,
                                             "text": "GetNTP\t获取 NTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -692,7 +691,8 @@
                                             "created": 1699927963548,
                                             "text": "SetDDNS\t设置 DDNS 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -702,7 +702,8 @@
                                             "created": 1699927963548,
                                             "text": "GetDDNS\t获取 DDNS 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -712,7 +713,8 @@
                                             "created": 1699927963548,
                                             "text": "SetSMTP\t设置 SMTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -722,7 +724,8 @@
                                             "created": 1699927963548,
                                             "text": "GetSMTP\t获取 SMTP 配置参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -732,7 +735,8 @@
                                             "created": 1699927963548,
                                             "text": "SetAlertRule\t设定告警规则",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -742,7 +746,8 @@
                                             "created": 1699927963548,
                                             "text": "GetAlertRule\t获取告警规则",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -752,7 +757,8 @@
                                             "created": 1699927963548,
                                             "text": "GetGrayAlarmConf\t获取灰度报警参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -762,7 +768,8 @@
                                             "created": 1699927963548,
                                             "text": "SetGrayAlarmConf\t设置灰度报警参数",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     }
@@ -774,7 +781,8 @@
                                     "created": 1699927852004,
                                     "text": "用户信息设定",
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "collapse",
+                                    "progress": 9
                                 },
                                 "children": [
                                     {
@@ -905,7 +913,8 @@
                                             "created": 1699928101026,
                                             "text": "AlarmOut\t报警输出",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "progress": 1
                                         },
                                         "children": []
                                     }
@@ -936,7 +945,8 @@
                                             "created": 1699928110079,
                                             "text": "DoDetectorKey\t模拟键盘发送",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -1068,7 +1078,8 @@
                                             "created": 1699928140832,
                                             "text": "QueryLog\t获取系统日志",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "progress": 1
                                         },
                                         "children": []
                                     },
@@ -1108,7 +1119,8 @@
                                             "created": 1699928140832,
                                             "text": "Upgrade\t升级系统",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -1118,7 +1130,8 @@
                                             "created": 1699928140832,
                                             "text": "GetOnlineUser\t查询在线用户",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -1128,7 +1141,8 @@
                                             "created": 1699928140832,
                                             "text": "KillOnlineUser\t踢出指定用户",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "priority": 1
                                         },
                                         "children": []
                                     },
@@ -1210,901 +1224,13 @@
                 "children": [
                     {
                         "data": {
-                            "id": "cwy6euzs0m00",
-                            "created": 1699928645940,
-                            "text": "配置文件参数列表",
-                            "expandState": "collapse",
-                            "layout": null
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "cwotei104zc0",
-                                    "created": 1698977903677,
-                                    "text": "network",
-                                    "priority": 1,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotja6d1eo0",
-                                    "created": 1698978278408,
-                                    "text": "network-ntp",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwotp53blu00",
-                                            "created": 1698978737525,
-                                            "text": "network.ntp",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjd83zeo0",
-                                    "created": 1698978285044,
-                                    "text": "network-ddns",
-                                    "priority": null,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjdeawlc0",
-                                    "created": 1698978285418,
-                                    "text": "network-pppoe",
-                                    "priority": 1,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjdk192g0",
-                                    "created": 1698978285765,
-                                    "text": "network-port",
-                                    "priority": 1,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjdmjrj40",
-                                    "created": 1698978285917,
-                                    "text": "storage",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwotnmv3xbk0",
-                                            "created": 1698978619482,
-                                            "text": "storage",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotnqur94w0",
-                                            "created": 1698978628168,
-                                            "text": "storage.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotnr26qw00",
-                                            "created": 1698978628617,
-                                            "text": "storage.1",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov45j5yps0",
-                                            "created": 1698982735055,
-                                            "text": "storage.2",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjdpq8vc0",
-                                    "created": 1698978286109,
-                                    "text": "video",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwotn0e4f3k0",
-                                            "created": 1698978570566,
-                                            "text": "video.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotn26kgg00",
-                                            "created": 1698978574463,
-                                            "text": "video.1",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov50kcj480",
-                                            "created": 1698982802607,
-                                            "text": "video.2",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotnb2q5mg0",
-                                            "created": 1698978593821,
-                                            "text": "video.jpeg",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov51hkixk0",
-                                            "created": 1698982804616,
-                                            "text": "video.source",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov6gid2b40",
-                                            "created": 1698982915680,
-                                            "text": "region_clip.1",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov863wx280",
-                                            "created": 1698983049767,
-                                            "text": "ivs",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjum8qfk0",
-                                    "created": 1698978322904,
-                                    "text": "audio",
-                                    "priority": 1,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwov1ihhyz40",
-                                            "created": 1698982528160,
-                                            "text": "audio.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjuovjx40",
-                                    "created": 1698978323063,
-                                    "text": "stream-url",
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjus73f40",
-                                    "created": 1698978323264,
-                                    "text": "image",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwouhg98oo00",
-                                            "created": 1698980956024,
-                                            "text": "isp",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhhe5g2o0",
-                                            "created": 1698980958498,
-                                            "text": "isp.0.adjustment",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhhv81gg0",
-                                            "created": 1698980959530,
-                                            "text": "isp.0.exposure",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhi3fgdk0",
-                                            "created": 1698980960026,
-                                            "text": "isp.0.night_to_day",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhicbxc80",
-                                            "created": 1698980960564,
-                                            "text": "isp.0.blc",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhictyhs0",
-                                            "created": 1698980960595,
-                                            "text": "isp.0.white_blance",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhidefts0",
-                                            "created": 1698980960629,
-                                            "text": "isp.0.enhancement",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhie2wk00",
-                                            "created": 1698980960670,
-                                            "text": "isp.0.video_adjustment",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhiem01k0",
-                                            "created": 1698980960702,
-                                            "text": "isp.0.auto_focus",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhif3ils0",
-                                            "created": 1698980960732,
-                                            "text": "isp.1.night_to_day",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov2928brc0",
-                                            "created": 1698982586010,
-                                            "text": "isp.1.adjustment",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov2s6g78g0",
-                                            "created": 1698982627624,
-                                            "text": "isp.1.exposure",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhifmywg0",
-                                            "created": 1698980960764,
-                                            "text": "isp.1.blc",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhifzn6o0",
-                                            "created": 1698980960786,
-                                            "text": "isp.1.white_blance",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouhiguqj40",
-                                            "created": 1698980960838,
-                                            "text": "isp.1.enhancement",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouild2pls0",
-                                            "created": 1698981045504,
-                                            "text": "isp.1.video_adjustment",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwouim2gi2g0",
-                                            "created": 1698981047039,
-                                            "text": "isp.1.auto_focus",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjuvkv8w0",
-                                    "created": 1698978323468,
-                                    "text": "system",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwouadlkrcg0",
-                                            "created": 1698980401690,
-                                            "text": "capability.video",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr6akoe80",
-                                            "created": 1698978896869,
-                                            "text": "capability.image_enhancement",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr5fiza80",
-                                            "created": 1698978894991,
-                                            "text": "capability.image_adjustment",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr68bid40",
-                                            "created": 1698978896732,
-                                            "text": "capability.image_blc",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr6h00vc0",
-                                            "created": 1698978897257,
-                                            "text": "capability.image_exposure",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr6mfb0o0",
-                                            "created": 1698978897585,
-                                            "text": "capability.image_night_to_day",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr8yrtsw0",
-                                            "created": 1698978902685,
-                                            "text": "capability.image_video_adjustment",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwotr9g4xew0",
-                                            "created": 1698978903735,
-                                            "text": "capability.image_white_blance",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoulaocdww0",
-                                            "created": 1698981257333,
-                                            "text": "user.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov4hysw140",
-                                            "created": 1698982762122,
-                                            "text": "system.device_info",
-                                            "priority": 1,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotjuyzupk0",
-                                    "created": 1698978323675,
-                                    "text": "osd",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwoto3e1kt40",
-                                            "created": 1698978655456,
-                                            "text": "osd.common",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto6pw1mg0",
-                                            "created": 1698978662702,
-                                            "text": "osd.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto6sw5080",
-                                            "created": 1698978662884,
-                                            "text": "osd.1",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto6wnc8w0",
-                                            "created": 1698978663111,
-                                            "text": "osd.2",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto7nqqk00",
-                                            "created": 1698978664749,
-                                            "text": "osd.3",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto811nts0",
-                                            "created": 1698978665554,
-                                            "text": "osd.4",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto8cpz6g0",
-                                            "created": 1698978666260,
-                                            "text": "osd.5",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwoto8j4l880",
-                                            "created": 1698978666647,
-                                            "text": "osd.6",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotkbnv91k0",
-                                    "created": 1698978360007,
-                                    "text": "roi",
-                                    "priority": 1,
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwov373o1ls0",
-                                            "created": 1698982660108,
-                                            "text": "roi.0",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov373oiu80",
-                                            "created": 1698982660108,
-                                            "text": "roi.1",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov373oio80",
-                                            "created": 1698982660108,
-                                            "text": "roi.2",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov373nzag0",
-                                            "created": 1698982660108,
-                                            "text": "roi.3",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov373nyu00",
-                                            "created": 1698982660108,
-                                            "text": "roi.4",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwov373obuw0",
-                                            "created": 1698982660108,
-                                            "text": "roi.5",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotkbqbk9s0",
-                                    "created": 1698978360156,
-                                    "text": "event",
-                                    "priority": 1,
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwov1tyym140",
-                                            "created": 1698982553161,
-                                            "text": "event.regional_invasion",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cwotkbt5ytk0",
-                                    "created": 1698978360328,
-                                    "text": "peripherals",
-                                    "layout": null,
-                                    "expandState": "expand"
-                                },
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
                             "id": "cwy719txq6g0",
                             "created": 1699930402250,
                             "text": "system 系统",
-                            "expandState": "collapse",
+                            "expandState": "expand",
                             "layout": null
                         },
                         "children": [
-                            {
-                                "data": {
-                                    "id": "cwy6f67flnk0",
-                                    "created": 1699928670348,
-                                    "text": "设置",
-                                    "expandState": "expand",
-                                    "layout": null
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cwy7p27sfeo0",
-                                            "created": 1699932266413,
-                                            "text": "device-info设备信息",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cwya35kvtag0",
-                                                    "created": 1699939013054,
-                                                    "text": "topic",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7phmvu2w0",
-                                            "created": 1699932299978,
-                                            "text": "firmware-upgrade 固件升级",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7t2faqjc0",
-                                            "created": 1699932580324,
-                                            "text": "reboot 重启",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7tvdx8qg0",
-                                            "created": 1699932643368,
-                                            "text": "factory-reset 恢复出厂设置",
-                                            "progress": null,
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7vduiecg0",
-                                            "created": 1699932761917,
-                                            "text": "export-log 导出日志",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7wfhrj4w0",
-                                            "created": 1699932843864,
-                                            "text": "export-db 导出数据库",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7wfhs6200",
-                                            "created": 1699932843865,
-                                            "text": "import-db 导入数据库",
-                                            "layout": null,
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cwy7x9z8zg80",
-                                            "created": 1699932910225,
-                                            "text": "login 登陆",
-                                            "expandState": "expand",
-                                            "layout": null
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cwy7xtm7g8g0",
-                                                    "created": 1699932952972,
-                                                    "text": "modify",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cwy7xtm7ri00",
-                                                    "created": 1699932952972,
-                                                    "text": "add",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cwy7xtm7e9c0",
-                                                    "created": 1699932952972,
-                                                    "text": "delete",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cwy88azv9mg0",
-                                                    "created": 1699933774445,
-                                                    "text": "登陆",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cwy84148f7s0",
-                                                    "created": 1699933439484,
-                                                    "text": "免密时间设置",
-                                                    "layout": null,
-                                                    "expandState": "expand"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
                             {
                                 "data": {
                                     "id": "cwy7bctlifc0",
@@ -2229,6 +1355,150 @@
                             },
                             {
                                 "data": {
+                                    "id": "cwy6f67flnk0",
+                                    "created": 1699928670348,
+                                    "text": "设置",
+                                    "expandState": "expand",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwy7p27sfeo0",
+                                            "created": 1699932266413,
+                                            "text": "device-info设备信息",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7phmvu2w0",
+                                            "created": 1699932299978,
+                                            "text": "firmware-upgrade 固件升级",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7t2faqjc0",
+                                            "created": 1699932580324,
+                                            "text": "reboot 重启",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7tvdx8qg0",
+                                            "created": 1699932643368,
+                                            "text": "factory-reset 恢复出厂设置",
+                                            "progress": null,
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7vduiecg0",
+                                            "created": 1699932761917,
+                                            "text": "export-log 导出日志",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7wfhrj4w0",
+                                            "created": 1699932843864,
+                                            "text": "export-db 导出数据库",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7wfhs6200",
+                                            "created": 1699932843865,
+                                            "text": "import-db 导入数据库",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwy7x9z8zg80",
+                                            "created": 1699932910225,
+                                            "text": "login 登陆",
+                                            "expandState": "expand",
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cwy7xtm7g8g0",
+                                                    "created": 1699932952972,
+                                                    "text": "modify",
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwy7xtm7ri00",
+                                                    "created": 1699932952972,
+                                                    "text": "add",
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwy7xtm7e9c0",
+                                                    "created": 1699932952972,
+                                                    "text": "delete",
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cwy88azv9mg0",
+                                                    "created": 1699933774445,
+                                                    "text": "登陆",
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cwy84148f7s0",
+                                                            "created": 1699933439484,
+                                                            "text": "免密时间设置",
+                                                            "layout": null,
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
                                     "id": "cwy7j5i3og00",
                                     "created": 1699931803382,
                                     "text": "删除",
@@ -2283,7 +1553,7 @@
                                             "id": "cwyag5l56io0",
                                             "created": 1699940031804,
                                             "text": "获取指定视频流参数",
-                                            "expandState": "expand",
+                                            "expandState": "collapse",
                                             "layout": null
                                         },
                                         "children": [
@@ -2482,7 +1752,7 @@
                                     "id": "cwyamqgh54g0",
                                     "created": 1699940547419,
                                     "text": "设置",
-                                    "expandState": "expand",
+                                    "expandState": "collapse",
                                     "layout": null
                                 },
                                 "children": [
@@ -2699,7 +1969,7 @@
                             "created": 1699941322815,
                             "text": "stream-url",
                             "layout": null,
-                            "expandState": "expand"
+                            "expandState": "collapse"
                         },
                         "children": [
                             {
@@ -2885,39 +2155,91 @@
                     },
                     {
                         "data": {
-                            "id": "cwyc5g7uc5c0",
-                            "created": 1699944835158,
-                            "text": "roi（region of interest）",
-                            "priority": 1,
-                            "resource": [],
-                            "layout": null,
-                            "expandState": "expand"
-                        },
-                        "children": []
-                    },
-                    {
-                        "data": {
-                            "id": "cwyc62r619c0",
-                            "created": 1699944884216,
-                            "text": "peripherals",
-                            "priority": 1,
-                            "resource": [],
-                            "layout": null,
-                            "expandState": "expand"
-                        },
-                        "children": []
-                    },
-                    {
-                        "data": {
                             "id": "cwyc6qb2zzc0",
                             "created": 1699944935486,
                             "text": "osd（on-screen display）",
-                            "priority": 1,
+                            "priority": null,
                             "resource": [],
                             "layout": null,
-                            "expandState": "expand"
+                            "expandState": "collapse"
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwzv3qx5ibk0",
+                                    "created": 1700099862773,
+                                    "text": "读取",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwzv2uopliw0",
+                                            "created": 1700099792605,
+                                            "text": "overlays"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzv3flo4dk0",
+                                            "created": 1700099838134,
+                                            "text": "image"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzv3ip6v5s0",
+                                            "created": 1700099844877,
+                                            "text": "privacy-mask"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwzv3w0vfjc0",
+                                    "created": 1700099873882,
+                                    "text": "参数设置"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwzv2uopliw0",
+                                            "created": 1700099792605,
+                                            "text": "overlays"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzv3flo4dk0",
+                                            "created": 1700099838134,
+                                            "text": "image"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzv3ip6v5s0",
+                                            "created": 1700099844877,
+                                            "text": "privacy-mask"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzv4d9tecg0",
+                                            "created": 1700099911428,
+                                            "text": "image/picture"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "data": {
@@ -2933,7 +2255,7 @@
                                     "id": "cwyccdxaq000",
                                     "created": 1699945378716,
                                     "text": "network",
-                                    "expandState": "expand",
+                                    "expandState": "collapse",
                                     "layout": null
                                 },
                                 "children": [
@@ -3212,6 +2534,15 @@
                                     "expandState": "expand"
                                 },
                                 "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwzz9lslxsg0",
+                                    "created": 1700111606239,
+                                    "text": "ftp",
+                                    "progress": 1
+                                },
+                                "children": []
                             }
                         ]
                     },
@@ -3322,7 +2653,7 @@
                                     "created": 1699950020220,
                                     "text": "movement",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -3561,7 +2892,7 @@
                             "id": "cwye0suf70g0",
                             "created": 1699950113044,
                             "text": "image",
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "note": "通道如何规划？",
                             "layout": null
                         },
@@ -3572,7 +2903,7 @@
                                     "created": 1699950122767,
                                     "text": "读取",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -4082,7 +3413,7 @@
                                     "created": 1699951601499,
                                     "text": "设置",
                                     "layout": null,
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -4641,12 +3972,121 @@
                     },
                     {
                         "data": {
+                            "id": "cwzx0oj4elc0",
+                            "created": 1700105264698,
+                            "text": "network-ntp",
+                            "progress": 1,
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwzxl9ybbk80",
+                                    "created": 1700106878612,
+                                    "text": "设置",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5pu80",
+                                            "created": 1700105338650,
+                                            "text": "时区"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5fnk0",
+                                            "created": 1700105338650,
+                                            "text": "NTP校准"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi57ts0",
+                                            "created": 1700105338650,
+                                            "text": "NTP地址"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5ol40",
+                                            "created": 1700105338650,
+                                            "text": "校准间隔"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5fxs0",
+                                            "created": 1700105338650,
+                                            "text": "同步本地时间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5ql40",
+                                            "created": 1700105338650,
+                                            "text": "设置时间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwzx1mi5noo0",
+                                            "created": 1700105338650,
+                                            "text": "设备时间"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwzxl5p6q800",
+                                    "created": 1700106869353,
+                                    "text": "读取",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwzxl3t4vkg0",
+                                            "created": 1700106865239,
+                                            "text": "时间时区获取"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwyc5g7uc5c0",
+                            "created": 1699944835158,
+                            "text": "roi（region of interest）",
+                            "priority": 1,
+                            "resource": [],
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
                             "id": "cwyewzc6wfk0",
                             "created": 1699952634832,
                             "text": "event",
                             "note": "通道如何规划？",
                             "expandState": "collapse",
-                            "layout": null
+                            "layout": null,
+                            "priority": 1,
+                            "progress": 1
                         },
                         "children": [
                             {
@@ -4980,6 +4420,752 @@
                             "created": 1699954878159,
                             "text": "audio 音频",
                             "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwyc62r619c0",
+                            "created": 1699944884216,
+                            "text": "peripherals",
+                            "priority": 1,
+                            "resource": [],
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwy6euzs0m00",
+                    "created": 1699928645940,
+                    "text": "配置文件参数列表",
+                    "expandState": "collapse",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwotei104zc0",
+                            "created": 1698977903677,
+                            "text": "network",
+                            "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotja6d1eo0",
+                            "created": 1698978278408,
+                            "text": "network-ntp",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwotp53blu00",
+                                    "created": 1698978737525,
+                                    "text": "network.ntp",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjd83zeo0",
+                            "created": 1698978285044,
+                            "text": "network-ddns",
+                            "priority": null,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjdeawlc0",
+                            "created": 1698978285418,
+                            "text": "network-pppoe",
+                            "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjdk192g0",
+                            "created": 1698978285765,
+                            "text": "network-port",
+                            "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjdmjrj40",
+                            "created": 1698978285917,
+                            "text": "storage",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwotnmv3xbk0",
+                                    "created": 1698978619482,
+                                    "text": "storage",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotnqur94w0",
+                                    "created": 1698978628168,
+                                    "text": "storage.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotnr26qw00",
+                                    "created": 1698978628617,
+                                    "text": "storage.1",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov45j5yps0",
+                                    "created": 1698982735055,
+                                    "text": "storage.2",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjdpq8vc0",
+                            "created": 1698978286109,
+                            "text": "video",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwotn0e4f3k0",
+                                    "created": 1698978570566,
+                                    "text": "video.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotn26kgg00",
+                                    "created": 1698978574463,
+                                    "text": "video.1",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov50kcj480",
+                                    "created": 1698982802607,
+                                    "text": "video.2",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotnb2q5mg0",
+                                    "created": 1698978593821,
+                                    "text": "video.jpeg",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov51hkixk0",
+                                    "created": 1698982804616,
+                                    "text": "video.source",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov6gid2b40",
+                                    "created": 1698982915680,
+                                    "text": "region_clip.1",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov863wx280",
+                                    "created": 1698983049767,
+                                    "text": "ivs",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjum8qfk0",
+                            "created": 1698978322904,
+                            "text": "audio",
+                            "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwov1ihhyz40",
+                                    "created": 1698982528160,
+                                    "text": "audio.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjuovjx40",
+                            "created": 1698978323063,
+                            "text": "stream-url",
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjus73f40",
+                            "created": 1698978323264,
+                            "text": "image",
+                            "expandState": "collapse",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwouhg98oo00",
+                                    "created": 1698980956024,
+                                    "text": "isp",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhhe5g2o0",
+                                    "created": 1698980958498,
+                                    "text": "isp.0.adjustment",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhhv81gg0",
+                                    "created": 1698980959530,
+                                    "text": "isp.0.exposure",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhi3fgdk0",
+                                    "created": 1698980960026,
+                                    "text": "isp.0.night_to_day",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhicbxc80",
+                                    "created": 1698980960564,
+                                    "text": "isp.0.blc",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhictyhs0",
+                                    "created": 1698980960595,
+                                    "text": "isp.0.white_blance",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhidefts0",
+                                    "created": 1698980960629,
+                                    "text": "isp.0.enhancement",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhie2wk00",
+                                    "created": 1698980960670,
+                                    "text": "isp.0.video_adjustment",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhiem01k0",
+                                    "created": 1698980960702,
+                                    "text": "isp.0.auto_focus",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhif3ils0",
+                                    "created": 1698980960732,
+                                    "text": "isp.1.night_to_day",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov2928brc0",
+                                    "created": 1698982586010,
+                                    "text": "isp.1.adjustment",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov2s6g78g0",
+                                    "created": 1698982627624,
+                                    "text": "isp.1.exposure",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhifmywg0",
+                                    "created": 1698980960764,
+                                    "text": "isp.1.blc",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhifzn6o0",
+                                    "created": 1698980960786,
+                                    "text": "isp.1.white_blance",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouhiguqj40",
+                                    "created": 1698980960838,
+                                    "text": "isp.1.enhancement",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouild2pls0",
+                                    "created": 1698981045504,
+                                    "text": "isp.1.video_adjustment",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwouim2gi2g0",
+                                    "created": 1698981047039,
+                                    "text": "isp.1.auto_focus",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjuvkv8w0",
+                            "created": 1698978323468,
+                            "text": "system",
+                            "expandState": "collapse",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwouadlkrcg0",
+                                    "created": 1698980401690,
+                                    "text": "capability.video",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr6akoe80",
+                                    "created": 1698978896869,
+                                    "text": "capability.image_enhancement",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr5fiza80",
+                                    "created": 1698978894991,
+                                    "text": "capability.image_adjustment",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr68bid40",
+                                    "created": 1698978896732,
+                                    "text": "capability.image_blc",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr6h00vc0",
+                                    "created": 1698978897257,
+                                    "text": "capability.image_exposure",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr6mfb0o0",
+                                    "created": 1698978897585,
+                                    "text": "capability.image_night_to_day",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr8yrtsw0",
+                                    "created": 1698978902685,
+                                    "text": "capability.image_video_adjustment",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwotr9g4xew0",
+                                    "created": 1698978903735,
+                                    "text": "capability.image_white_blance",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoulaocdww0",
+                                    "created": 1698981257333,
+                                    "text": "user.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov4hysw140",
+                                    "created": 1698982762122,
+                                    "text": "system.device_info",
+                                    "priority": 1,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotjuyzupk0",
+                            "created": 1698978323675,
+                            "text": "osd",
+                            "expandState": "collapse",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwoto3e1kt40",
+                                    "created": 1698978655456,
+                                    "text": "osd.common",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto6pw1mg0",
+                                    "created": 1698978662702,
+                                    "text": "osd.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto6sw5080",
+                                    "created": 1698978662884,
+                                    "text": "osd.1",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto6wnc8w0",
+                                    "created": 1698978663111,
+                                    "text": "osd.2",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto7nqqk00",
+                                    "created": 1698978664749,
+                                    "text": "osd.3",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto811nts0",
+                                    "created": 1698978665554,
+                                    "text": "osd.4",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto8cpz6g0",
+                                    "created": 1698978666260,
+                                    "text": "osd.5",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwoto8j4l880",
+                                    "created": 1698978666647,
+                                    "text": "osd.6",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotkbnv91k0",
+                            "created": 1698978360007,
+                            "text": "roi",
+                            "priority": 1,
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwov373o1ls0",
+                                    "created": 1698982660108,
+                                    "text": "roi.0",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov373oiu80",
+                                    "created": 1698982660108,
+                                    "text": "roi.1",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov373oio80",
+                                    "created": 1698982660108,
+                                    "text": "roi.2",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov373nzag0",
+                                    "created": 1698982660108,
+                                    "text": "roi.3",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov373nyu00",
+                                    "created": 1698982660108,
+                                    "text": "roi.4",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwov373obuw0",
+                                    "created": 1698982660108,
+                                    "text": "roi.5",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotkbqbk9s0",
+                            "created": 1698978360156,
+                            "text": "event",
+                            "priority": 1,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwov1tyym140",
+                                    "created": 1698982553161,
+                                    "text": "event.regional_invasion",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwotkbt5ytk0",
+                            "created": 1698978360328,
+                            "text": "peripherals",
                             "layout": null,
                             "expandState": "expand"
                         },
