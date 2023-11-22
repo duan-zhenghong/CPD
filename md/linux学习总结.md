@@ -1,5 +1,5 @@
 ---
-title: Linux 学习总结
+ptitle: Linux 学习总结
 date: 2021-07-12 01:16:30
 tags: 总结
 ---
@@ -2227,6 +2227,28 @@ ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub
   向下搜索：`/关键字`
 
   向上搜索：`？关键字`
+
+## apt(包管理软件)
+
+1、在虚拟机中安装vmware tools工具，方便传递文件
+
+```
+sudo apt-get install open-vm-tools-desktop
+```
+
+完成后重启，通过命令[vmware](https://so.csdn.net/so/search?q=vmware&spm=1001.2101.3001.7020)-toolbox-cmd -v 验证安装
+
+2、下载更新软件包列表信息。运行以下命令：
+
+```
+sudo apt-get update
+```
+
+3、查找软件包
+
+```
+apt-cache search <关键字>
+```
 
 ## zypper（suse管理软件包工具）
 

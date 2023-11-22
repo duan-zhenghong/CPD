@@ -67,7 +67,7 @@ git merge A # 将A合并到B分支
 git reset --hard commitID # 强制回退道某个commitID
 ```
 
-### remot
+### remote
 
 ```
 git remote # 查看所有远端仓
@@ -76,6 +76,14 @@ git remote add <远端仓名> <远端仓地址> # 增加远端仓
 git remote rm <远端仓名> # 删除远端仓
 git remote set-url <远端仓名> <新的远端仓地址> # 修改远端仓地址（直接修改配置文件.git中的config文件中目标远端的url也可以修改地址） 
 git remote update # jieang
+```
+
+### rm
+
+```
+#缓存未清除：如果已经将某些文件或目录添加到Git版本控制中，并且之后才将它们添加到.gitignore文件中，那么这些文件或目录的更改可能仍然会被Git缓存。可以使用以下命令清除Git缓存：
+git rm -r --cached <dir>
+git add .
 ```
 
 ### clean
