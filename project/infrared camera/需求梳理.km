@@ -1435,6 +1435,16 @@
                                     },
                                     {
                                         "data": {
+                                            "id": "cx6tthymkyg0",
+                                            "created": 1700807158216,
+                                            "text": "fpga配置文件导入导出",
+                                            "priority": null,
+                                            "progress": 1
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
                                             "id": "cwy7x9z8zg80",
                                             "created": 1699932910225,
                                             "text": "login 登陆",
@@ -1487,7 +1497,8 @@
                                                             "created": 1699933439484,
                                                             "text": "免密时间设置",
                                                             "layout": null,
-                                                            "expandState": "expand"
+                                                            "expandState": "expand",
+                                                            "progress": 1
                                                         },
                                                         "children": []
                                                     }
@@ -1510,9 +1521,10 @@
                                         "data": {
                                             "id": "cwy7jxma1hk0",
                                             "created": 1699931864585,
-                                            "text": "删除用户",
+                                            "text": "删除/data/目录下的文件",
                                             "layout": null,
-                                            "expandState": "expand"
+                                            "expandState": "expand",
+                                            "progress": 1
                                         },
                                         "children": []
                                     }
