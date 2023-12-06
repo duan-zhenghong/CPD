@@ -2364,6 +2364,23 @@ ftp 192.168.137.3 # 登录ftp服务器，后面为服务器IP地址
 
 文件夹中看到映射的文件夹，双击输入用户名密码，就可以访问了
 
+## ubuntu
+
+### 关闭图形界面
+
+```
+sudo systemctl set-default multi-user.target
+# 然后重启
+```
+
+### 关闭自动更新（缩短重启时间）
+
+```
+sudo dpkg-reconfigure unattended-upgrades
+# 选择no并按ENTER以禁用无人参与的升级。
+# 后面可以使用 sudo apt update 或 sudo apt upgrade 进行升级
+```
+
 # 参考
 
 [shell编程教程](http://c.biancheng.net/shell/program/)
