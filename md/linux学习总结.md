@@ -1455,8 +1455,72 @@ export RUN_CONF=/home/d139/conf/platform/cbp/cbp_jboss.conf
 
 ## df
 
+df命令用于显示磁盘分区上的可使用的磁盘空间。默认显示单位为KB。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。
+
+### 语法
+
+df(选项)(参数)
+
+### 选项
+
+-a或--all：包含全部的文件系统；
+--block-size=<区块大小>：以指定的区块大小来显示区块数目；
+-h或--human-readable：以可读性较高的方式来显示信息；
+-H或--si：与-h参数相同，但在计算时是以1000 Bytes为换算单位而非1024 Bytes；
+-i或--inodes：显示inode的信息；
+-k或--kilobytes：指定区块大小为1024字节；
+-l或--local：仅显示本地端的文件系统；
+-m或--megabytes：指定区块大小为1048576字节；
+--no-sync：在取得磁盘使用信息前，不要执行sync指令，此为预设值；
+-P或--portability：使用POSIX的输出格式；
+--sync：在取得磁盘使用信息前，先执行sync指令；
+-t<文件系统类型>或--type=<文件系统类型>：仅显示指定文件系统类型的磁盘信息；
+-T或--print-type：显示文件系统的类型；
+-x<文件系统类型>或--exclude-type=<文件系统类型>：不要显示指定文件系统类型的磁盘信息；
+--help：显示帮助；
+--version：显示版本信息。
+
+#### 参数
+
+文件：指定文件系统上的文件。
+
+#### 实例
+
+查看系统磁盘设备，默认是KB为单位：
+
 ```
-df -h # 查看磁盘使用情况
+[root@LinServ-1 ~]# df
+文件系统             1K-块          已用     可用           已用%   挂载点
+/dev/sda2            146294492    28244432  110498708     21%     /
+/dev/sda1            1019208      62360     904240        7%      /boot
+tmpfs                1032204      0         1032204       0%      /dev/shm
+/dev/sdb1            2884284108   218826068 2518944764    8%      /data1
+```
+
+使用-h选项以KB以上的单位来显示，可读性高：
+
+```
+[root@LinServ-1 ~]# df -h
+文件系统              容量  已用 可用 已用% 挂载点
+/dev/sda2             140G   27G  106G  21% /
+/dev/sda1             996M   61M  884M   7% /boot
+tmpfs                1009M     0 1009M   0% /dev/shm
+/dev/sdb1             2.7T  209G  2.4T   8% /data1
+```
+
+查看全部文件系统：
+
+```
+[root@LinServ-1 ~]# df -a
+文件系统               1K-块        已用     可用   已用%    挂载点
+/dev/sda2            146294492  28244432 110498708  21% /
+proc                         0         0         0   -  /proc
+sysfs                        0         0         0   -  /sys
+devpts                       0         0         0   -  /dev/pts
+/dev/sda1              1019208     62360    904240   7%   /boot
+tmpfs                  1032204         0   1032204   0%   /dev/shm
+/dev/sdb1            2884284108 218826068 2518944764 8%   /data1
+none                         0         0         0   -    /proc/sys/fs/binfmt_misc
 ```
 
 ## dirname
@@ -1521,6 +1585,61 @@ find . -type f -exec du -h {} + | sort -r -h # 查看所有文件，并按文件
 
 ```
 find . -type f ! -path "./.git/*" -exec du -h {} + | sort -r -h |head -100
+```
+
+## free
+
+free命令可以显示当前系统未使用的和已使用的内存数目，还可以显示被内核使用的内存缓冲区。
+
+#### 语法
+
+free(选项)
+
+#### 选项
+
+-b：以Byte为单位显示内存使用情况；
+-k：以KB为单位显示内存使用情况；
+-m：以MB为单位显示内存使用情况；
+-o：不显示缓冲区调节列；
+-s<间隔秒数>：持续观察内存使用状况；
+-t：显示内存总和列；
+-V：显示版本信息。
+
+#### 实例
+
+```
+free -m
+total used free shared buffers cached
+Mem: 2016 1973 42 0 163 1497
+-/+ buffers/cache: 312 1703
+Swap: 4094 0 4094
+```
+
+第一部分Mem行解释：
+
+total：内存总数；
+used：已经使用的内存数；
+free：空闲的内存数；
+shared：当前已经废弃不用；
+buffers Buffer：缓存内存数；
+cached Page：缓存内存数。
+关系：total = used + free
+
+第二部分(-/+ buffers/cache)解释:
+
+(-buffers/cache) used内存数：第一部分Mem行中的 used – buffers – cached
+(+buffers/cache) free内存数: 第一部分Mem行中的 free + buffers + cached
+可见-buffers/cache反映的是被程序实实在在吃掉的内存，而+buffers/cache反映的是可以挪用的内存总数。
+
+第三部分是指交换分区。
+
+#### 实例
+
+```
+[root@cp31 ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:          15876        2323        5996         772        7556       11908
+Swap:          8063           0        8063
 ```
 
 ## grep
@@ -1605,6 +1724,28 @@ lsb_release -a # 查看发行版本信息
 
 more 命令类似 cat ，不过会以一页一页的形式显示，更方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示，而且还有搜寻字串的功能（与 vi 相似），使用中的说明文件，请按 h 。
 
+## mount
+
+* mount [-l|-h|-V]
+* mount -a [-fFnrsvw] [-t fstype] [-O optlist]
+* mount [-fnrsvw] [-o options] device|dir
+* mount [-fnrsvw] [-t fstype] [-o options] device dir
+
+```
+# 挂载一个设备文件到指定挂载点
+mount /dev/sda1 /mnt
+
+# 指定文件系统类型和挂载选项 
+mount -t ext4 -o ro /dev/sda1 /media/usb
+
+# 卸载一个已经挂载的文件系统
+umount /mnt
+
+# 获取mount命令的帮助信息
+man mount
+info mount
+```
+
 ## mkdir
 
 ```shell
@@ -1631,6 +1772,160 @@ mkdir -p parent/{1/{11,12,13},2/{21,22,23}}/son # 批量创建文件夹
 ```
 
 > -p, --parents     需要时创建目标目录的上层目录，但即使这些目录已存在也不当作错误处理
+
+## netstat
+
+netstat命令用来打印Linux中网络系统的状态信息，可让你得知整个Linux系统的网络情况。
+
+#### 语法
+
+netstat(选项)
+
+#### 选项
+
+-a或--all：显示所有连线中的Socket；
+-A<网络类型>或--<网络类型>：列出该网络类型连线中的相关地址；
+-c或--continuous：持续列出网络状态；
+-C或--cache：显示路由器配置的快取信息；
+-e或--extend：显示网络其他相关信息；
+-F或--fib：显示FIB；
+-g或--groups：显示多重广播功能群组组员名单；
+-h或--help：在线帮助；
+-i或--interfaces：显示网络界面信息表单；
+-l或--listening：显示监控中的服务器的Socket；
+-M或--masquerade：显示伪装的网络连线；
+-n或--numeric：直接使用ip地址，而不通过域名服务器；
+-N或--netlink或--symbolic：显示网络硬件外围设备的符号连接名称；
+-o或--timers：显示计时器；
+-p或--programs：显示正在使用Socket的程序识别码和程序名称；
+-r或--route：显示Routing Table；
+-s或--statistice：显示网络工作信息统计表；
+-t或--tcp：显示TCP传输协议的连线状况；
+-u或--udp：显示UDP传输协议的连线状况；
+-v或--verbose：显示指令执行过程；
+-V或--version：显示版本信息；
+-w或--raw：显示RAW传输协议的连线状况；
+-x或--unix：此参数的效果和指定"-A unix"参数相同；
+--ip或--inet：此参数的效果和指定"-A inet"参数相同。
+
+#### 实例
+
+列出所有端口 (包括监听和未监听的)
+
+```
+netstat -a     #列出所有端口
+netstat -at    #列出所有tcp端口
+netstat -au    #列出所有udp端口   
+```
+
+列出所有处于监听状态的 Sockets
+
+```
+netstat -l        #只显示监听端口
+netstat -lt       #只列出所有监听 tcp 端口
+netstat -lu       #只列出所有监听 udp 端口
+netstat -lx       #只列出所有监听 UNIX 端口
+```
+
+显示每个协议的统计信息
+
+```
+netstat -s   显示所有端口的统计信息
+netstat -st   显示TCP端口的统计信息
+netstat -su   显示UDP端口的统计信息
+```
+
+在netstat输出中显示 PID 和进程名称
+
+```
+netstat -pt
+```
+
+`netstat -p`可以与其它开关一起使用，就可以添加“PID/进程名称”到netstat输出中，这样debugging的时候可以很方便的发现特定端口运行的程序。
+
+在netstat输出中不显示主机，端口和用户名(host, port or user)
+
+当你不想让主机，端口和用户名显示，使用netstat -n。将会使用数字代替那些名称。同样可以加速输出，因为不用进行比对查询。
+
+```
+netstat -an
+```
+
+如果只是不想让这三个名称中的一个被显示，使用以下命令:
+
+```
+netsat -a --numeric-ports
+netsat -a --numeric-hosts
+netsat -a --numeric-users
+```
+
+持续输出netstat信息
+
+```
+netstat -c   #每隔一秒输出网络信息
+```
+
+显示系统不支持的地址族(Address Families)
+
+```
+netstat --verbose
+```
+
+在输出的末尾，会有如下的信息：
+
+```
+netstat: no support for `AF IPX' on this system.
+netstat: no support for `AF AX25' on this system.
+netstat: no support for `AF X25' on this system.
+netstat: no support for `AF NETROM' on this system.
+```
+
+显示核心路由信息
+
+netstat -r
+使用netstat -rn显示数字格式，不查询主机名称。
+
+找出程序运行的端口
+
+并不是所有的进程都能找到，没有权限的会不显示，使用 root 权限查看所有的信息。
+
+```
+netstat -ap | grep ssh
+```
+
+找出运行在指定端口的进程：
+
+```
+netstat -an | grep ':80'
+```
+
+显示网络接口列表
+
+```
+netstat -i
+```
+
+显示详细信息，像是ifconfig使用 `netstat -ie`。
+
+IP和TCP分析
+
+查看连接某服务端口最多的的IP地址：
+
+```
+netstat -ntu | grep :80 | awk '{print $5}' | cut -d: -f1 | awk '{++ip[$1]} END {for(i in ip) print ip[i],"\t",i}' | sort -nr
+```
+
+TCP各种状态列表：
+
+```
+netstat -nt | grep -e 127.0.0.1 -e 0.0.0.0 -e ::: -v | awk '/^tcp/ {++state[$NF]} END {for(i in state) print i,"\t",state[i]}'
+```
+
+查看phpcgi进程数，如果接近预设值，说明不够用，需要增加：
+
+```
+netstat -anpo | grep "php-cgi" | wc -l
+```
 
 ## ps（Process Status）
 
@@ -1944,6 +2239,96 @@ wc -l file1.txt|tee -a file2.txt # 读取文件2的行数，打印在命令行�
 ```
 
 > -a  写入的方式为追加而不是覆盖
+
+## test
+
+test命令是shell环境中测试条件表达式的实用工具。
+
+#### 语法
+
+test(选项)
+
+#### 选项
+
+```
+-b<文件>：如果文件为一个块特殊文件，则为真；
+-c<文件>：如果文件为一个字符特殊文件，则为真；
+-d<文件>：如果文件为一个目录，则为真；
+-e<文件>：如果文件存在，则为真；
+-f<文件>：如果文件为一个普通文件，则为真；
+-g<文件>：如果设置了文件的SGID位，则为真；
+-G<文件>：如果文件存在且归该组所有，则为真；
+-k<文件>：如果设置了文件的粘着位，则为真；
+-O<文件>：如果文件存在并且归该用户所有，则为真；
+-p<文件>：如果文件为一个命名管道，则为真；
+-r<文件>：如果文件可读，则为真；
+-s<文件>：如果文件的长度不为零，则为真；
+-S<文件>：如果文件为一个套接字特殊文件，则为真；
+-u<文件>：如果设置了文件的SUID位，则为真；
+-w<文件>：如果文件可写，则为真；
+-x<文件>：如果文件可执行，则为真。
+```
+
+#### 实例
+
+linux中shell编程中的test常见用法：
+
+##### 判断表达式
+
+```
+if test     #表达式为真
+if test !   #表达式为假
+test 表达式1 –a 表达式2     #两个表达式都为真
+test 表达式1 –o 表达式2     #两个表达式有一个为真
+test 表达式1 ! 表达式2      #条件求反
+```
+
+##### 判断字符串
+
+```
+test –n 字符串    #字符串的长度非零
+test –z 字符串    #字符串的长度是否为零
+test 字符串1＝字符串2       #字符串是否相等，若相等返回true
+test 字符串1!＝字符串2      #字符串是否不等，若不等反悔false
+```
+
+##### 判断整数
+
+```
+test 整数1 -eq 整数2    #整数相等
+test 整数1 -ge 整数2    #整数1大于等于整数2
+test 整数1 -gt 整数2    #整数1大于整数2
+test 整数1 -le 整数2    #整数1小于等于整数2
+test 整数1 -lt 整数2    #整数1小于整数2
+test 整数1 -ne 整数2    #整数1不等于整数2
+```
+
+##### 判断文件
+
+```
+test File1 –ef File2    两个文件是否为同一个文件，可用于硬连接。主要判断两个文件是否指向同一个inode。
+test File1 –nt File2    判断文件1是否比文件2新
+test File1 –ot File2    判断文件1比是否文件2旧
+test –b file   #文件是否块设备文件
+test –c File   #文件并且是字符设备文件
+test –d File   #文件并且是目录
+test –e File   #文件是否存在 （常用）
+test –f File   #文件是否为正规文件 （常用）
+test –g File   #文件是否是设置了组id
+test –G File   #文件属于的有效组ID
+test –h File   #文件是否是一个符号链接（同-L）
+test –k File   #文件是否设置了Sticky bit位
+test –b File   #文件存在并且是块设备文件
+test –L File   #文件是否是一个符号链接（同-h）
+test –o File   #文件属于有效用户ID
+test –p File   #文件是一个命名管道
+test –r File   #文件是否可读
+test –s File   #文件是否是非空白文件
+test –t FD     #文件描述符是在一个终端打开的
+test –u File   #文件存在并且设置了它的set-user-id位
+test –w File   #文件是否存在并可写
+test –x File   #文件属否存在并可执行
+```
 
 ## time
 
