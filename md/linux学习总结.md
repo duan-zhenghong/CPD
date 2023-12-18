@@ -1536,7 +1536,23 @@ cd $(dirname `which python3`) # 查找Python3的所在目录，通过dirname找�
 disk usage
 
 ```
+
 du -sh   # 查看指定目录的大小，无参的情况下，表示查看当前目录的磁盘占用，-s表示仅显示总计
+du -h -d 1 ~/repo/rv1106/project/ #-d 与 -s 不能共同使用。 -s 显示总计大小，而 -d 指定递归的深度。
+
+du -h -d 1 . | sort -n  -r  # 结合sort 对结果排序  -n -r逆序输出
+668K    ./tests
+100K    ./rockchip-conf
+96M     .
+76K     ./.github
+57M     ./demos
+15M     ./src
+11M     ./examples
+6.4M    ./scripts
+4.8M    ./env_support
+1.6M    ./docs
+
+du -a /path/to/directory # 递归显示每个文件的大小，如果不使用 -a 参数，du 命令默认只显示目录的大小总计，而不显示每个文件的大小。
 ```
 
 ## dmesg
