@@ -35,27 +35,98 @@ tags: 总结
 
 远程仓库是位于远程服务器上的 Git 仓库副本。它允许多个开发者之间的协作和代码共享。远程仓库通常用于团队协作或备份代码。您可以使用 `git push` 命令将本地仓库中的更改推送到远程仓库，以便其他开发者可以访问和获取最新的更改。类似地，使用 `git pull` 命令从远程仓库拉取最新的更改到本地仓库。远程仓库可以使用 URL 进行访问，例如 GitHub、GitLab 或 Bitbucket。
 
-## GIT中的指针（引用）
+> 远端仓库的创建配置和使用在对应的平台有详细描述，例如gitee：[https://help.gitee.com/repository](https://help.gitee.com/repository)
 
-### HEAD
+### GIT中的指针（引用）
+
+#### HEAD
 
 HEAD 是当前所在分支的引用，也是当前工作树（Working Tree）所指向的提交。它可以被看作是当前活动分支的别名。当您执行 `git checkout` 或者进行提交时，HEAD 将移动到新的提交，反映出工作树和当前分支的最新状态。
 
 > `HEAD~` 表示当前提交的父提交，`HEAD~2` 表示当前提交的父提交的父提交，依此类推。这种相对表示法对于访问历史中的先前提交很有用。
 
-### 分支引用
+#### 分支引用
 
 分支引用是指向特定分支的指针。例如，`master`、`develop` 或者其他自定义的分支名称。每个分支引用都指向一个提交对象，表示该分支的最新提交。当您在特定分支上进行提交时，该分支引用会随之更新。
 
-### 远程分支引用
+#### 远程分支引用
 
 远程分支引用是指向远程仓库的分支的指针。这些引用通常以 `<remote>/<branch>` 的形式命名，例如 `origin/master`。它们是本地仓库中对远程仓库分支的跟踪。当您与远程仓库进行交互（如拉取、推送）时，这些远程分支引用会更新以反映远程仓库的最新状态。
 
-### 标签引用
+#### 标签引用
 
 标签引用是指向特定提交的不可变指针。标签用于标记某个特殊的提交，通常是版本号、重要里程碑或发布版本等。标签引用不会随提交的改变而移动，因此可以用于永久性地标记某个特定状态。
 
 ## 常用git操作
+
+### 密钥配置
+
+> Windows 用户建议使用 **Windows PowerShell** 或者  **Git Bash** ，在 **命令提示符** 下无 `cat` 和 `ls` 命令。
+
+1、通过命令 `ssh-keygen` 生成 SSH Key：
+
+```bash
+ssh-keygen -t ed25519 -C"Gitee SSH Key"
+```
+
+* `-t` key 类型
+* `-C` 注释
+
+输出，如：
+
+```bash
+Generating public/private ed25519 key pair.
+Enter fileinwhich to save the key (/home/git/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/git/.ssh/id_ed25519
+Your public key has been saved in /home/git/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:ohDd0OK5WG2dx4gST/j35HjvlJlGHvihyY+Msl6IC8I Gitee SSH Key
+The key's randomart image is:
++--[ED25519 256]--+
+|    .o           |
+|   .+oo          |
+|...O.o +       |
+|   .= * = +.     |
+|  .o +..S*. +    |
+|....o o..+* *   |
+|.E. o ...+.O    |
+|..... o =.    |
+|..oo. o.o    |
++----[SHA256]-----+
+```
+
+* 中间通过三次**回车键**确定
+
+2、查看生成的 SSH 公钥和私钥：
+
+```bash
+ls ~/.ssh/
+```
+
+输出：
+
+```bash
+id_ed25519  id_ed25519.pub
+```
+
+* 私钥文件 `id_ed25519`
+* 公钥文件 `id_ed25519.pub`
+
+3、读取公钥文件 `~/.ssh/id_ed25519.pub`：
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+输出，如：
+
+```bash
+ssh-ed25519 AAAA***5B Gitee SSH Key
+```
+
+复制终端输出的公钥，根据远端仓库平台的说明，将公钥添加到平台。
 
 ### **恢复文件**
 
@@ -114,7 +185,7 @@ git add <resolved-file>  # <resolved-file> 是冲突已经解决的文件路径
 
 > 请记住，在处理代码冲突时，与其他开发者进行协作和沟通是非常重要的。确保您了解彼此的修改意图，并遵循团队的协作流程。
 
-## 分支合并
+### 分支合并
 
 确保位于要合并更改的目标分支的最新状态。可以通过 `git checkout <branch>` 切换到目标分支，并执行 `git pull` 拉取最新更改。
 
