@@ -3,7 +3,9 @@ title: git 命令总结
 date: 2021-07-12 01:16:30
 tags: 总结
 ---
-# git 命令总结
+# git入门
+
+官方文档有最全面的讲解，优先参考官方文档 ：[https://git-scm.com/book/zh/v2](https://git-scm.com/book/zh/v2)
 
 ## 命令
 
@@ -64,18 +66,19 @@ git merge A # 将A合并到B分支
 ### reset
 
 ```bash
-git reset --hard commitID # 强制回退道某个commitID
+git reset --hard commitID # 强制回退到某个commitID
 ```
 
 ### remote
 
 ```
-git remote # 查看所有远端仓
-git remote -v # 查看所有远端仓地址
-git remote add <远端仓名> <远端仓地址> # 增加远端仓 
-git remote rm <远端仓名> # 删除远端仓
-git remote set-url <远端仓名> <新的远端仓地址> # 修改远端仓地址（直接修改配置文件.git中的config文件中目标远端的url也可以修改地址） 
-git remote update # jieang
+git remote: 显示当前仓库配置的所有远程仓库的简写名称。
+git remote -v: 显示当前仓库配置的所有远程仓库的简写名称和对应的 URL。
+git remote add <remote_name> <remote_url>: 添加一个新的远程仓库，指定远程仓库的简写名称和 URL。
+git remote remove <remote_name>: 移除指定名称的远程仓库。
+git remote rename <old_name> <new_name>: 重命名指定名称的远程仓库。
+git remote set-url <远端仓名> <新的远端仓地址>: 修改远端仓地址（直接修改配置文件.git中的config文件中目标远端的url也可以修改地址） 
+git remote update: 获取远程仓库中的最新提交和分支，并将这些信息更新到本地仓库中。
 ```
 
 ### rm
@@ -89,9 +92,11 @@ git add .
 ### clean
 
 ```bash
-git clean -f  # 删除指定路径下的没有被track过的文件
-git clean -df #  连 untracked 的目录也一起删掉
-git clean -xf # 删除当前目录下所有没有track过的文件. 不管他是否是.gitignore文件里面指定的文件夹和文件.
+git clean: 移除工作目录中所有未跟踪的文件和目录（不包括被忽略的文件）。
+git clean -n 或 git clean --dry-run: 显示将要执行的清理操作，但不实际移除文件和目录。
+git clean -f 或 git clean --force: 强制执行清理操作，移除未跟踪的文件和目录。
+git clean -d 或 git clean --directories: 移除未跟踪的目录。
+git clean -x 或 git clean --force --ignored: 移除未跟踪的文件和目录，包括被忽略的文件。
 ```
 
 - -n  clean的演习, 告诉你哪些文件将会被删除.不会真正的删除文件, 只是一个提醒
@@ -110,43 +115,90 @@ git branch -d <分支名> # 删除分支
 git branch --contains {commitid} # 查看commitid 出现的分支
 ```
 
+### diff
+
+```
+git diff: 比较当前工作目录中的文件与最后一次提交（HEAD）之间的差异。
+git diff <commit>: 比较当前工作目录中的文件与指定提交之间的差异。
+git diff <commit1> <commit2>: 比较两个指定提交之间的差异。
+git diff --cached: 比较暂存区（Index）中的文件与最后一次提交之间的差异（已经 git add 的文件）。
+git diff <branch1> <branch2>: 比较两个分支之间的差异。
+git diff <filename> 是一个用于比较特定文件差异的 Git 命令。它可以显示指定文件在不同版本之间的修改内容，包括行级别的插入、删除和修改。
+```
+
 ### show
 
 ```bash
-git show commitid # 查看某个commitid对应的修改
-
-git show commitid --stat # 查看某个commitid对应修改的文件
+git show: 显示最新的提交（HEAD）的详细信息。
+git show <commit>: 显示指定提交的详细信息，其中 <commit> 可以是提交的哈希值、分支名、标签名等。
+git show commitid --stat：查看某个commitid对应修改的文件，概览。
+git show <commit>:<file>: 显示指定提交中某个文件的详细信息。
+git show <object>: 显示指定对象的详细信息，其中 <object> 可以是提交、标签或树对象的哈希值。
 ```
 
-### log
-
-```
-git log --author=d00xxxxxxG@f42021
-git log ==graph --all --color --deecorate --oneline 
-```
-
-- `--oneline`: 把每一个提交压缩到了一行中
-- `--decorate`: 让 git log 显示指向这个提交的所有引用（比如说分支、标签等）
-- `--color`: 彩色输出信息
-- `--graph`: 绘制一个 ASCII 图像来展示提交历史的分支结构
-- `--all`: 显示所有分支信息
-
-## 操作
+## 常用git操作
 
 ### **恢复文件**
 
-如果不小心在本地删错了文件，但是版本库中还有，这时可以用 如下命令把误删的文件恢复到最新版本：
+如果不小心在本地删错了文件，但是版本库中还有，这时可以用 checkout 命令还原，本质是用版本库或者暂存区里的版本替换工作区的版本。
 
 ```
 $ git checkout -- file 	#恢复删除的某个文件
 $ git checkout -- * 	#恢复删除的所有文件
 ```
 
-git checkout -- file 其实是用版本库或者暂存区里的版本替换工作区的版本，无论工作区是修改还是删除都可以”一键还原“。
+```
+git checkout <commit> <file> # 其中 `<commit>` 是要还原的版本的提交哈希值或分支名称，`<file>` 是要还原的文件的路径。执行上述命令后，Git 将会将指定文件还原为指定版本的内容。
+```
 
-### 子模块使用
+> 注意，在使用 `git checkout` 命令之前，确保没有未提交的更改或者将会丢失这些更改。如果有未提交的更改，可以先进行提交或者使用 `git stash` 命令将其保存为临时更改。
 
-#### 添加submodule
+
+
+## 常用git命令
+
+### **git status**
+
+* 当前分支的名称：显示当前所在的分支。
+* 未暂存的文件：列出在工作目录中已被修改但尚未添加到暂存区的文件。
+* 暂存区的文件：列出已经添加到暂存区但尚未提交的文件。
+* 未跟踪的文件：列出在工作目录中存在但尚未被 Git 跟踪的文件。
+* 分支状态：如果本地分支落后于远程分支，将显示提示信息。
+
+### git diff
+
+```
+git diff: 比较当前工作目录中的文件与最后一次提交（HEAD）之间的差异。
+git diff <commit>: 比较当前工作目录中的文件与指定提交之间的差异。
+git diff <commit1> <commit2>: 比较两个指定提交之间的差异。
+git diff --cached: 比较暂存区（Index）中的文件与最后一次提交之间的差异（已经 git add 的文件）。
+git diff <branch1> <branch2>: 比较两个分支之间的差异。
+git diff <filename> 是一个用于比较特定文件差异的 Git 命令。它可以显示指定文件在不同版本之间的修改内容，包括行级别的插入、删除和修改。
+```
+
+### git log
+
+```
+git log # 每条记录包含下面的信息
+git log --author=<author>  # 
+```
+
+--oneline:  把每一个提交压缩到了一行中
+
+--decorate: 让 git log 显示指向这个提交的所有引用（比如说分支、标签等）
+
+--color: 彩色输出信息
+
+--graph: 绘制一个 ASCII 图像来展示提交历史的分支结构
+
+--all: 显示所有分支信息
+
+
+
+
+## 子仓功能
+
+### 添加submodule
 
 `git submodule add <url> <path>`
 
@@ -160,7 +212,7 @@ git diff --cached查看修改内容可以看到增加了子模块，并且新文
 
 git commit提交即完成子模块的添加
 
-#### 使用submodule
+### 使用submodule
 
 克隆项目后，默认子模块目录下无任何内容。需要在项目根目录执行如下命令完成子模块的下载：
 
@@ -171,7 +223,7 @@ git commit提交即完成子模块的添加
 `git submodule update --init --recursive`
 执行后，子模块目录下就有了源码，再执行相应的makefile即可。
 
-#### 更新submodule
+### 更新submodule
 
 子模块的维护者提交了更新后，使用子模块的项目必须手动更新才能包含最新的提交。
 
@@ -179,7 +231,7 @@ git commit提交即完成子模块的添加
 
 完成后返回到项目目录，可以看到子模块有待提交的更新，使用git add，提交即可。
 
-#### 删除submodule
+### 删除submodule
 
 有时子模块的项目维护地址发生了变化，或者需要替换子模块，就需要删除原有的子模块。
 
