@@ -387,6 +387,17 @@ git reset HEAD~ # 将当前分支的指针移动到上一个提交，撤消最�
 git reset --hard HEAD~ # 将当前分支的指针移动到上一个提交，撤消最后一次提交的更改，并丢弃工作目录和暂存区中的所有更改。
 ```
 
+### git cherry-pick
+
+```
+git cherry-pick <commit-hash>
+git cherry-pick abc123 def456   # 应用提交 abc123 和 def456 到当前分支
+```
+
+> 其中 `<commit-hash>` 是要应用的提交的哈希值（或短哈希），表示要从其他分支中选择的提交。可以使用 `git log` 命令查看提交历史，并获取相应的哈希值。
+
+> 需要注意的是，复制提交到当前分支可能会导致提交历史的分叉和冲突。如果在应用提交时发生冲突，你需要手动解决冲突，并使用 `git cherry-pick --continue` 命令继续应用剩余的提交。
+
 ## 子仓功能
 
 ### 添加submodule
