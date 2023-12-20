@@ -3,16 +3,13 @@ title: clang-format 使用手册
 date: 2021-07-12 01:16:30
 tags: vscode
 ---
-
 # clang-format 使用手册
-
-## 背景介绍
 
 该程序能够自动化格式 C/C++/Obj-C 代码，支持多种代码风格：Google, Chromium, LLVM, Mozilla, WebKit，也支持自定义 style（通过编写 .clang-format 文件）。
 
-## 安装
+## 安装 Clang-Format
 
-### ubuntu安装clang-format
+### 包管理器安装Clang-Format
 
 ```
 sudo apt-get install clang-format
@@ -20,12 +17,12 @@ sudo apt-get install clang-format
 
 ### 手动安装clang-format
 
-- [下载](https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/clang+llvm-11.0.0-x86_64-linux-sles12.4.tar.xz) 文件clang+llvm-11.0.0-x86_64-linux-sles12.4.tar.xz
+- [clang管网下载](https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/clang+llvm-11.0.0-x86_64-linux-sles12.4.tar.xz) 文件clang+llvm-11.0.0-x86_64-linux-sles12.4.tar.xz
+  windows版本（[win64.exe结尾的安装包](https://github.com/llvm/llvm-project/releases)）安装类似。
 
   ```
   wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/clang+llvm-11.0.0-x86_64-linux-sles12.4.tar.xz
   ```
-
 - 解压文件
 
   ```text
@@ -42,15 +39,12 @@ sudo apt-get install clang-format
   ├── libexec
   └── share
   ```
-
-  bin 文件中有 clang-format 的可执行文件
-
 - 将clang-format放入 `/usr/bin`目录下完成安装
 
   ```
-  mv .clang-format /usr/bin
+  mv .clang-format /usr/bin 
+  ln -s <clang-format-path> /usr/local/bin/clang-format # 也可以创建软连接到path路径下
   ```
-
 - 查看版本如下，安装成功
 
   ```
@@ -58,13 +52,73 @@ sudo apt-get install clang-format
   clang-format version 10.0.0-4ubuntu1
   ```
 
+## clang-format常用参数
+
+* `-style=<style>`：指定代码样式。可以是以下预定义样式之一：`llvm`, `google`, `chromium`, `Microsoft`，`mozilla`, `webkit`，或者是一个指向样式文件的路径（例如 `-style=file`）。默认为 `llvm`样式。
+* `-assume-filename=<filename>`：假定文件名为 `<filename>`，用于确定文件的语言。
+* `-dump-config`：输出当前样式的配置到标准输出。可以将输出重定向到文件中，例如 `clang-format -dump-config > .clang-format`。
+* `-i`：直接修改文件，而不是输出到标准输出。使用此选项后，将修改指定的源文件，使其符合指定的样式规则。
+* `-fallback-style=<style>`：指定回退样式，用于在输入文件中找不到样式时使用。默认为 `none`。
+* `-lines=<line-range>`：指定要格式化的行范围。例如，`-lines=5`表示只格式化第5行，`-lines=10-20`表示只格式化第10到第20行。
+* `-offset=<offset>`：指定要格式化的偏移量范围。例如，`-offset=100`表示只格式化从第100个字符开始的代码。
+* `-length=<length>`：指定要格式化的长度范围。例如，`-length=50`表示只格式化长度为50的代码片段。
+* `-version`：显示 `clang-format`的版本信息。
+
 ## vscode中使用clang-format
 
-### 部署 `.clang-format`文件
+### 安装 vscode 插件
 
-在工程根目录下新建 `.clang-format` 文件，填入规则，如下是基于google的格式进行修改的一个例子，仅供参考
+在 Visual Studio Code 中，打开扩展面板（Ctrl+Shift+X 或者点击左侧的方块图标），搜索并安装 "Clang-Format" 插件。安装完成后，重新启动 Visual Studio Code。
 
+### 配置 Clang-Format
+
+使用快捷键“Ctrl + Shift + P”或“F1”,打开控制台
+
+在控制台中输入"Open Default Setting(JSON)"，并选择，可以打开json文件版的设置，这里包含了vscode所有的设置选项，同时还有其他三个维度的settings文件：
+
+* Open Remote Setting(JSON) 对应远端
+* Open User Setting(JSON) 对应当前用户
+* Open WorkSpace Setting(JSON) 对应当前工作目录。通常是工作框根目录的“.vscode”文件
+
+在 vscode 中，也可以 打开用户设置，通过UI界面设置。在设置面板中找到下面三项并配置如下：
+
+```json
+"editor.formatOnSave": true,
+"clang-format.executable": "clang-format",
+"clang-format.style": "file"
 ```
+
+* `"editor.formatOnSave": true`：这个设置将在保存文件时自动应用 Clang-Format 格式化代码。
+* `"clang-format.executable": "clang-format"`：这个设置指定了 Clang-Format 的可执行文件路径，确保它与你系统上的实际路径匹配。
+* `"clang-format.style": "file"`：这个设置指定了 Clang-Format 使用的格式化样式。你可以根据自己的需求选择不同的样式，或者使用 `.clang-format` 文件指定样式。
+
+### 使用 Clang-Format
+
+在 Visual Studio Code 中打开一个 C/C++ 文件。当你保存文件时，Clang-Format 将自动应用代码格式化。
+
+> 如果保存后不起做用，可能是当前环境有多个formatter，需要指定一个默认的。
+
+如果你想手动应用 Clang-Format，可以使用以下方法之一：
+
+* 右键单击编辑器，选择 "Format Document"。
+* 使用快捷键 `Shift + Alt + F`（默认键绑定）。
+* 在命令面板中（`Ctrl + Shift + P`），输入 "Format Document" 并选择相应的命令。
+
+### 自定义 Clang-Format 格式化样式（可选）
+
+如果你希望自定义 Clang-Format 的格式化样式，可以在项目根目录下新建 `.clang-format` 文件，并根据自己的需求进行配置。你可以在 Clang 官方网站找到 `.clang-format` 文件的详细文档和示例。
+
+```bash
+clang-format -style=llvm -dump-config > .clang-format
+# windows下使用
+C:\"Program Files (x86)"\clang-format.exe -style=google -dump-config > .clang-format
+```
+
+> 这将在当前目录下生成一个名为 `.clang-format`的文件，其中包含了LLVM风格的默认格式化选项。-style参数支持6种配置如下：
+
+如下是基于google的格式进行修改的一个例子，仅供参考
+
+```clang-format
 # 语言: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto
 Language: Cpp
 # BasedOnStyle:	LLVM
@@ -280,63 +334,85 @@ TabWidth: 4
 UseTab: Never
 ```
 
-### 开启自动格式化
-
-在vscode配置文件目录中添加文件settings.json，保存文档时会触发自动格式化。内容填写如下（该设置仅针对该工程）：
+### 批量格式化代码
 
 ```
-{
-	    "editor.formatOnSave": true
-}
+find ./dirname  -iname "*.h" -o -iname "*.c" | xargs clang-format -style=file -i
 ```
 
-或者在设置中搜索 `format on save`，勾选对应选项即可（该设置针对全局）
+这个命令的作用是找到指定目录下的所有 `.h` 和 `.c` 文件，并使用 `clang-format` 对它们进行格式化
 
-### 指定clang-format位置
+> `find ./dirname  -iname "`：使用 find 命令在 ./dirname 目录下递归查找所有以 .h 或 .c 结尾的文件。-iname 选项表示不区分大小写地匹配文件名，-o 表示逻辑或操作，即匹配 .h 或 .c 的文件。
+>
+> |：管道符号，将 find 命令的输出传递给下一个命令。
+>
+> `xargs clang-format -style=file -i`：xargs将前一个命令的输出作为参数传递给 clang-format 命令。-style=file 表示使用文件中指定的格式化样式，-i 表示直接在原文件上进行修改。
 
-在settings中添加如下内容,填入clang-format的绝对路径，没有进行如下配置，clang-format
+## keil中使用clang-format
 
-插件会尝试在PATH中查找：
+在Keil中使用Clang-Format并非直接支持的功能，因为Keil是一个基于ARM编译器的集成开发环境（IDE），而Clang-Format是与LLVM/Clang编译器相关的代码格式化工具。然而，你可以通过以下步骤手动集成Clang-Format到Keil中：
+
+* 安装Clang-Format：首先，确保你的系统上已经安装了Clang-Format。你可以从LLVM官方网站下载。[windows版本clang-format](https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.5/LLVM-17.0.5-win64.exe)
+* 将下载后的文件后缀名.exe改为.zip，解压获取clang-format.exe
+* 创建自定义的工具：打开Keil IDE，并导航到“Tools”（工具）->“Customize Tools Menu”（用户工具）。
+* 双击Menu Content输入框，输入自定义命令，并填写以Command、Arguments等信息，完成命令创建。如下是常用的命令配置：
+
+  ```
+  # 直接使用预定义样式格式化当前文件
+  Command：C:\Program Files (x86)\clang-format.exe
+  Arguments：-style=google -i !E
+  ```
+
+  ```
+  # 使用自定义格式文件格式化当前文件
+  Command：C:\Program Files (x86)\clang-format.exe
+  Arguments：-style=file \path\to\file\.clang-format -i !E
+  ```
+
+  ```
+  # 使用自定义格式格式化所有文件
+  Command：C:\Program Files (x86)\clang-format.exe
+  Arguments：-style=file \path\to\file\.clang-format -i "$E*.c" "$E*.h" 
+  ```
+* 应用并保存设置：点击“OK”按钮保存设置。
+
+### 常见问题
+
+#### 错误1
 
 ```
-{
-    "clang-format.executable": "/usr/bin/clang-format"
-}
+F:\repo\PES101\.clang-format:1:4: error: Got empty plain scalar
+Error reading F:\repo\PES101\.clang-format: invalid argument
 ```
 
-> This extension will attempt to find clang-format on your `PATH`. Alternatively, the clang-format executable can be specified in your vscode settings.json file:
+原因是.clang-format文件格式的问题，window下生成的模板默认是utf-16格式的，而正常应该使用utf-8，可以手动创建或者从linux生成utf-8格式的.clang-format文件。
 
-或者在vscode的设置中搜索 `clang-format.executable` ，显式指定clang-format的绝对路径即可。
+#### 错误2
 
-### 格式化代码
+```
+F:\repo\PES101\.clang-format:96:5: error: unknown key 'Delimiter'Delimiter:       pb
+^~~~~~~~~
+```
 
-- 手动：在代码中右键点击 `Format Document` 或者使用快捷键 `ctrl + shift + f` 
+将.clang-format文件中的对应内容修改如下，错误原因[https://stackoverflow.com/questions/59700809/error-with-rawstringformats-in-clang-format-in-clion](https://stackoverflow.com/questions/59700809/error-with-rawstringformats-in-clang-format-in-clion)：
 
+```
+RawStringFormats:
+- Delimiters:       [pb]
+  Language:        TextProto
+  BasedOnStyle:    google
+```
 
-- 自动： `ctrl + s` 保存文档，触发自动格式化（前提是要开启自动化选，上文有提到开启方法）
+## 参考文献
 
+.clang-format中配置项含义及用法：
 
-- 批量格式化：find ./dirname  -iname "\*.h" -o -iname "\*.c" | xargs clang-format -style=file -i
+官方：https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
-  > 对文件夹下的文件一起进行格式化
-  >
-  > ./dirname 为文件夹目录
-  >
-  > -iname 指按名字匹配文件，且不区分大小写
-  >
-  > -o 同 -or，表示or的意思，这里指查找"\*.h" 和"\*.c"的文件。类似的还有 -a (meaning logical AND).
-  >
-  > xargs 是一个强有力的命令，它能够捕获一个命令的输出，然后传递给另外一个命令；xargs 也可以将单行或多行文本输入转换为其他格式，例如多行变单行，单行变多行；xargs 默认的命令是 echo，这意味着通过管道传递给 xargs 的输入将会包含换行和空白，不过通过 xargs 的处理，换行和空白将被空格取代。
-  
-  
+中文：https://blog.csdn.net/weixin_43717839/article/details/129382657
 
-# 参考文献
+官网：https://llvm.org/
 
-https://releases.llvm.org/download.html
+LLVM下载：https://releases.llvm.org/download.html
 
 [clang-format 插件使用说明](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
-
-https://clang.llvm.org/docs/ClangFormatStyleOptions.html
-
-[find命令介绍](https://man7.org/linux/man-pages/man1/find.1.html)
-
