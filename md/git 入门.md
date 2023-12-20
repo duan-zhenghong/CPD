@@ -398,6 +398,17 @@ git cherry-pick abc123 def456   # 应用提交 abc123 和 def456 到当前分支
 
 > 需要注意的是，复制提交到当前分支可能会导致提交历史的分叉和冲突。如果在应用提交时发生冲突，你需要手动解决冲突，并使用 `git cherry-pick --continue` 命令继续应用剩余的提交。
 
+### git stash
+
+```
+git stash 保存当前修改
+git stash list 查看存档列表
+git stash apply <stash_id> 恢复保存的修改
+git stash drop <stash_id> 删除保存的存档
+git stash pop 恢复最近的存档并删除它
+git stash pop <stash_id> 恢复指定标识符的存档并删除它
+```
+
 ## 子仓功能
 
 ### 添加submodule
