@@ -374,6 +374,8 @@ find ./dirname  -iname "*.h" -o -iname "*.c" | xargs clang-format -style=file -i
   Command：C:\Program Files (x86)\clang-format.exe
   Arguments：-style=file \path\to\file\.clang-format -i "$E*.c" "$E*.h" 
   ```
+
+  .clang-format文件可以不明确写出，程序会自动自下而上查找.clang-format文件
 * 应用并保存设置：点击“OK”按钮保存设置。
 
 ### 常见问题
