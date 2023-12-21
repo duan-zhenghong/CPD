@@ -1,0 +1,334 @@
+{
+    "root": {
+        "data": {
+            "id": "cxttpasnxpc0",
+            "created": 1703142708165,
+            "text": "嵌入式硬件"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cxttpgk0lk80",
+                    "created": 1703142720702,
+                    "text": "芯片",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxttplblg9s0",
+                            "created": 1703142731077,
+                            "text": "架构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxtu13w5ods0",
+                                    "created": 1703143633508,
+                                    "text": "指令集架构",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxttsen7pls0",
+                                            "created": 1703142951635,
+                                            "text": "CISC（Complex Instruction Set Computing）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxttur2wm480",
+                                            "created": 1703143135433,
+                                            "text": "RISC（Reduced Instruction Set Computing）",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cxttw7fz9xk0",
+                                                    "created": 1703143249416,
+                                                    "text": "ARM（Advanced RISC Machine）：ARM 是一种广泛应用于移动设备和嵌入式系统的 RISC 架构。它以低功耗和高性能而闻名，被广泛用于智能手机、平板电脑、嵌入式设备和网络设备等。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cxttw7fzaa00",
+                                                    "created": 1703143249416,
+                                                    "text": "MIPS（Microprocessor without Interlocked Pipeline Stages）：MIPS 是一种常用的 RISC 架构，具有简洁的指令集和高性能。它被广泛应用于嵌入式系统、网络设备、数字信号处理器（DSP）等领域。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cxttw7fyu8w0",
+                                                    "created": 1703143249416,
+                                                    "text": "PowerPC（Power Performance Computing）：PowerPC 是由 IBM、Motorola 和 Apple 共同开发的 RISC 架构。它在过去被广泛应用于个人电脑和服务器，现在主要在嵌入式系统和服务器领域使用。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cxttw7fz2200",
+                                                    "created": 1703143249416,
+                                                    "text": "SPARC（Scalable Processor Architecture）：SPARC 是由 Sun Microsystems（现为 Oracle）开发的 RISC 架构。它在过去主要用于 UNIX 服务器和工作站，现在主要用于高性能计算和服务器领域。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cxttw7fz4800",
+                                                    "created": 1703143249416,
+                                                    "text": "RISC-V（RISC-Five）：RISC-V 是一个开源的 RISC 架构，它具有可扩展性和灵活性，适用于各种应用。RISC-V 的设计目标是提供一种自由、开放的指令集架构，被广泛用于教育、研究和嵌入式系统。"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxttuxcpla80",
+                                            "created": 1703143149087,
+                                            "text": "VLIW（Very Long Instruction Word）VLIW是一种非常长指令字计算机架构，它将多个指令捆绑成一个长指令，通过并行执行来提高性能。VLIW架构依赖于编译器将多条指令组合成可执行的指令捆绑，因此对编译器的优化要求较高。"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxttvh64d8w0",
+                                            "created": 1703143192224,
+                                            "text": "EPIC（Explicitly Parallel Instruction Computing）：EPIC是一种显式并行指令计算机架构，它通过在指令中显式地指定并行执行的方式来提高性能。"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxttvsgs7wo0",
+                                            "created": 1703143216813,
+                                            "text": "SIMD（Single Instruction, Multiple Data）：SIMD是一种单指令流多数据流的计算机架构"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cxtu5xnxu740",
+                                    "created": 1703144011772,
+                                    "text": "计算架构"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxtu60dr0bc0",
+                                            "created": 1703144017686,
+                                            "text": "\"Run-to-completion\"（执行至完成）和\"pipeline\"（流水线）是两种不同的执行模型，用于描述计算任务的执行方式。在网络报文专用处理器中有着很好的应用，华为内部使用微码来编写相应程序"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxtu6rzry000",
+                                            "created": 1703144077791,
+                                            "text": "\"Run-to-completion\"是一种执行模型，其中一个任务在开始执行后会一直执行，直到完成，而不会被其他任务中断。在这种模型下，任务按照顺序依次执行，每个任务执行完毕后才会执行下一个任务。这种模型适用于实时系统和需要确保任务按照顺序连续执行的应用场景，因为它可以提供确定性的执行时间和可靠性。"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxtu6sjthkw0",
+                                            "created": 1703144079003,
+                                            "text": "\"pipeline\"是一种并行执行模型，其中多个任务在不同的阶段同时执行。每个任务被划分为多个阶段，这些阶段可以并行执行，以提高整体的执行效率。在流水线中，每个任务在一个阶段完成后，会被传递给下一个阶段继续处理，直到任务完成。这种模型适用于需要高吞吐量和并行计算的应用场景，如高性能计算和数据处理。",
+                                            "layout_right_offset": {
+                                                "x": 266.0000000000002,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxtu2nzbpf40",
+                            "created": 1703143755600,
+                            "text": "其他",
+                            "layout_right_offset": {
+                                "x": -23.99999961853041,
+                                "y": 1.1368683772161603e-13
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxtu2pv1sug0",
+                                    "created": 1703143759695,
+                                    "text": "rtc"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxtu2rdbt800",
+                                            "created": 1703143762977,
+                                            "text": "topic"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxttpz0b0aw0",
+                            "created": 1703142760869,
+                            "text": "分类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxttqq45z3k0",
+                                    "created": 1703142819876,
+                                    "text": "cpu"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttqsa48tc0",
+                                    "created": 1703142824589,
+                                    "text": "gpu"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttqtwp8r40",
+                                    "created": 1703142828132,
+                                    "text": "npu"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxttrvle6og0",
+                                            "created": 1703142910166,
+                                            "text": "网络神经处理器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxtts12mr9s0",
+                                            "created": 1703142922092,
+                                            "text": "网络处理器"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttu6is8aw0",
+                                    "created": 1703143090681,
+                                    "text": "mcu"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxtts8morq80",
+                            "created": 1703142938542,
+                            "text": "封装和引脚"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cxttskru51s0",
+                            "created": 1703142964975,
+                            "text": "核心组成",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxttsq67jds0",
+                                    "created": 1703142976728,
+                                    "text": "核心（cpu）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttssw3l000",
+                                    "created": 1703142982647,
+                                    "text": "内存单元"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttszs9ig00",
+                                    "created": 1703142997652,
+                                    "text": "输入输出接口"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxtttfsoci80",
+                            "created": 1703143032506,
+                            "text": "发展趋势",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxttti5ssxk0",
+                                    "created": 1703143037653,
+                                    "text": "工艺进步"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxtttnmipgw0",
+                                    "created": 1703143049548,
+                                    "text": "集成度提高"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxttts1mnco0",
+                                    "created": 1703143059169,
+                                    "text": "功耗降低"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxtttvn68lk0",
+                                    "created": 1703143067002,
+                                    "text": "智能加持"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
