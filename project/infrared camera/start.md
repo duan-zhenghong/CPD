@@ -278,24 +278,6 @@ apt install gcc-arm-linux-gnueabi
 
 2、断电情况下，长按mask按键，接入type-c电源。然后使用usb方式，能识别出来，就可以烧录
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 本地调试尝试
 
 基于commitid：4d1cffd9938bbc71bd1daedef1829c62d66e3647
