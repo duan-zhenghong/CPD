@@ -1624,11 +1624,10 @@ free(选项)
 #### 实例
 
 ```
-free -m
-total used free shared buffers cached
-Mem: 2016 1973 42 0 163 1497
--/+ buffers/cache: 312 1703
-Swap: 4094 0 4094
+jihan@ubuntu:~/repo/rv1106_IR/project$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           6417        2593         418           0        3406        3557
+Swap:          2047          48        1999
 ```
 
 第一部分Mem行解释：
@@ -1692,6 +1691,122 @@ head -1
 id # 查看用户id 组id 用户组信息
 ```
 
+## iptables
+
+iptables命令是Linux上常用的防火墙软件，是netfilter项目的一部分。可以直接配置，也可以通过许多前端和图形界面配置。
+
+#### 语法
+
+iptables -t 表名 <-A/I/D/R> 规则链名 [规则号] <-i/o 网卡名> -p 协议名 <-s 源IP/源子网> --sport 源端口 <-d 目标IP/目标子网> --dport 目标端口 -j 动作
+
+#### 选项
+
+-t<表>：指定要操纵的表；
+-A：向规则链中添加条目；
+-D：从规则链中删除条目；
+-i：向规则链中插入条目；
+-R：替换规则链中的条目；
+-L：显示规则链中已有的条目；
+-F：清除规则链中已有的条目；
+-Z：清空规则链中的数据包计算器和字节计数器；
+-N：创建新的用户自定义规则链；
+-P：定义规则链中的默认目标；
+-h：显示帮助信息；
+-p：指定要匹配的数据包协议类型；
+-s：指定要匹配的数据包源ip地址；
+-j<目标>：指定要跳转的目标；
+-i<网络接口>：指定数据包进入本机的网络接口；
+-o<网络接口>：指定数据包要离开本机所使用的网络接口。
+
+**表名：**
+
+* raw：用于高级功能，如网址过滤。
+* mangle：用于实现服务质量的数据包修改（QoS）。
+* net：用于地址转换，常用于网关路由器。
+* filter：用于防火墙规则的包过滤。
+
+**规则链名：**
+
+* INPUT链：处理输入数据包。
+* OUTPUT链：处理输出数据包。
+* FORWARD链：处理转发数据包。
+* PREROUTING链：用于目标地址转换（DNAT）。
+* POSTROUTING链：用于源地址转换（SNAT）。
+
+**动作：**
+
+* accept：接收数据包。
+* DROP：丢弃数据包。
+* REDIRECT：重定向、映射、透明代理。
+* SNAT：源地址转换。
+* DNAT：目标地址转换。
+* MASQUERADE：用于ADSL的IP伪装（NAT）。
+* LOG：日志记录。
+
+#### 实例
+
+##### 清除已有iptables规则
+
+```
+iptables -F
+iptables -X
+iptables -Z
+```
+
+##### 开放指定的端口
+
+```
+iptables -A INPUT -s 127.0.0.1 -d 127.0.0.1 -j ACCEPT               #允许本地回环接口(即运行本机访问本机)
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT    #允许已建立的或相关连的通行
+iptables -A OUTPUT -j ACCEPT         #允许所有本机向外的访问
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT    #允许访问22端口
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT    #允许访问80端口
+iptables -A INPUT -p tcp --dport 21 -j ACCEPT    #允许ftp服务的21端口
+iptables -A INPUT -p tcp --dport 20 -j ACCEPT    #允许FTP服务的20端口
+iptables -A INPUT -j reject       #禁止其他未允许的规则访问
+iptables -A FORWARD -j REJECT     #禁止其他未允许的规则访问
+```
+
+##### 屏蔽IP
+
+iptables -I INPUT -s 123.45.6.7 -j DROP #屏蔽单个IP的命令
+iptables -I INPUT -s 123.0.0.0/8 -j DROP #封整个段即从123.0.0.1到123.255.255.254的命令
+iptables -I INPUT -s 124.45.0.0/16 -j DROP #封IP段即从123.45.0.1到123.45.255.254的命令
+iptables -I INPUT -s 123.45.6.0/24 -j DROP #封IP段即从123.45.6.1到123.45.6.254的命令是
+
+##### 查看已添加的iptables规则
+
+iptables -L -n -v
+
+Chain INPUT (policy DROP 48106 packets, 2690K bytes)
+pkts bytes target prot opt in out source destination
+5075 589K ACCEPT all -- lo * 0.0.0.0/0 0.0.0.0/0
+191K 90M ACCEPT tcp -- * * 0.0.0.0/0 0.0.0.0/0 tcp dpt:22
+1499K 133M ACCEPT tcp -- * * 0.0.0.0/0 0.0.0.0/0 tcp dpt:80
+4364K 6351M ACCEPT all -- * * 0.0.0.0/0 0.0.0.0/0 state RELATED,ESTABLISHED
+6256 327K ACCEPT icmp -- * * 0.0.0.0/0 0.0.0.0/0
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+pkts bytes target prot opt in out source destination
+
+Chain OUTPUT (policy ACCEPT 3382K packets, 1819M bytes)
+pkts bytes target prot opt in out source destination
+5075 589K ACCEPT all -- * lo 0.0.0.0/0 0.0.0.0/0
+
+##### 删除已添加的iptables规则
+
+将所有iptables以序号标记显示，执行：
+
+```
+iptables -L -n --line-numbers
+```
+
+比如要删除INPUT里序号为8的规则，执行：
+
+```
+iptables -D INPUT 8
+```
+
 ## kill
 
 同类的还有pkill（与killall类似）、killall（killall 命令用于杀死指定名字的进程）命令，不需要查询进程id，可根据关键字杀死进程。
@@ -1701,6 +1816,23 @@ kill -9 <pid> # 杀掉进程
 ```
 
 > kill就是给某个进程id发送了一个信号。默认发送的信号是SIGTERM，而kill -9发送的信号是SIGKILL，即exit。exit信号不会被系统阻塞，所以kill -9能顺利杀掉进程。当然你也可以使用kill发送其他信号给进程。
+
+## last
+
+查看用户登录日志 last
+
+```
+jihan@ubuntu:~/repo/rv1106_IR/project$ last
+jihan    tty1                          Wed Dec 13 21:22   still logged in
+reboot   system boot  5.4.0-84-generic Wed Dec 13 21:22   still running
+jihan    pts/4        192.168.206.1    Tue Dec  5 18:44 - 18:44  (00:00)
+jihan    pts/4        192.168.206.1    Tue Dec  5 18:43 - 18:43  (00:00)
+jihan    pts/4        192.168.206.1    Tue Dec  5 18:43 - 18:43  (00:00)
+jihan    tty1                          Tue Dec  5 18:08 - crash (8+03:14)
+reboot   system boot  5.4.0-84-generic Tue Dec  5 18:07   still running
+
+wtmp begins Tue Dec  5 18:05:47 2023
+```
 
 ## ln
 
@@ -1977,12 +2109,13 @@ passwd root # 修改、设置root密码
 
 ## pstree
 
+pstree命令以树状图的方式展现进程之间的派生关系，显示效果比较直观。
+
 ```
 pstree  # 查看进程树
-
 pstree -p # 查看进程树，并打印每个进程的PID
-
 pstree -p <PID> # 查看某个进程树形结构
+pstree  -a  # 显示所有进程的所有详细信息
 ```
 
 ## read
@@ -2106,6 +2239,51 @@ rmdir `find -type d -maxdepth 1 -empty`
 
      - `-printf %P\\0\\n`  从文件路径中删除 `src_directory/`。
      - `--files-from=-`  表示仅包含来自标准输入的文件（从find命令传递的文件）。
+
+# service
+
+```
+service --status-all
+ [ + ]  acpid
+ [ - ]  alsa-utils
+ [ - ]  anacron
+ [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  avahi-daemon
+ [ - ]  bluetooth
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ + ]  cups
+ [ + ]  cups-browsed
+ [ + ]  dbus
+ [ - ]  dns-clean
+ [ - ]  gdm3
+ [ + ]  grub-common
+ [ - ]  hwclock.sh
+ [ + ]  irqbalance
+ [ + ]  kerneloops
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ + ]  network-manager
+ [ + ]  networking
+ [ + ]  open-vm-tools
+ [ - ]  plymouth
+ [ - ]  plymouth-log
+ [ - ]  pppd-dns
+ [ + ]  procps
+ [ - ]  rsync
+ [ + ]  rsyslog
+ [ - ]  saned
+ [ + ]  speech-dispatcher
+ [ - ]  spice-vdagent
+ [ + ]  ssh
+ [ + ]  udev
+ [ + ]  ufw
+ [ + ]  unattended-upgrades
+ [ - ]  uuidd
+ [ + ]  whoopsie
+ [ - ]  x11-common
+```
 
 ## seq
 
@@ -2365,6 +2543,27 @@ user  0m0.020s
 sys   0m0.899s 
 ```
 
+## top
+
+top命令可以实时动态地查看系统的整体运行情况，是一个综合了多方信息监测系统性能和运行信息的实用工具。通过top命令所提供的互动式界面，用热键可以管理。
+
+#### 语法
+
+top(选项)
+
+#### 选项
+
+-b：以批处理模式操作；
+-c：显示完整的治命令；
+-d：屏幕刷新间隔时间；
+-I：忽略失效过程；
+-s：保密模式；
+-S：累积模式；
+-i<时间>：设置间隔时间；
+-u<用户名>：指定用户名；
+-p<进程号>：指定进程；
+-n<次数>：循环显示的次数。
+
 ## touch
 
 用于修改文件或者目录的时间属性，包括存取时间和更改时间，文件不存在，系统会自动创建一个新文件
@@ -2411,6 +2610,26 @@ umask 0022 # 设置权限掩码，临时
 
 `~/.bashrc < /etc/bashrc  < /etc/profile.d/*.sh`
 
+## uptime
+
+查看系统运行时间、用户数、负载 uptime
+
+```
+[root@cp31 ~]# uptime
+ 18:50:33 up 98 days,  8:42,  1 user,  load average: 0.25, 0.25, 0.25
+```
+
+## w
+
+查看活动用户
+
+```
+jihan@ubuntu:~/repo/rv1106_IR/project$ w
+ 22:55:07 up 8 days,  1:32,  1 user,  load average: 0.00, 0.02, 0.09
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+jihan    tty1     -                13Dec23  8days  0.06s  0.04s -bash
+```
+
 ## wc
 
 ```sh
@@ -2435,8 +2654,9 @@ eg:
 ```shell
 wget --no-check-certificate  url  # --no-check-certificate不做证书验证，下载指定文件
 wget -b -i xxx.txt # 批量下载xxx.txt中的文件链接，xxx.txt为要下载的链接，一行一个。
-
+wget -c http://www.linuxde.net/testfile.zip # 继续中断的下载时可以使用-c参数。
 wget [url] --proxy=no # wget 使用代理 下载超时，可以取消代理
+wget --spider URL # 测试下载链接      定时下载之前进行检查、间隔检测网站是否可用、检查网站页面的死链接
 ```
 
 > -b 表示后台下载
@@ -2448,6 +2668,98 @@ wget [url] --proxy=no # wget 使用代理 下载超时，可以取消代理
 ```
 whoami # 查看当前用户名 也可以使用id -un
 ```
+
+## yum命令
+
+yum命令是在Fedora和RedHat以及SUSE中基于rpm的软件包管理器，它可以使系统管理人员交互和自动化地更细与管理RPM软件包，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。
+
+yum提供了查找、安装、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。
+
+#### 语法
+
+yum(选项)(参数)
+
+#### 选项
+
+-h：显示帮助信息；
+-y：对所有的提问都回答“yes”；
+-c：指定配置文件；
+-q：安静模式；
+-v：详细模式；
+-d：设置调试等级（0-10）；
+-e：设置错误等级（0-10）；
+-R：设置yum处理一个命令的最大等待时间；
+-C：完全从缓存中运行，而不去下载或者更新任何头文件。
+
+#### 参数
+
+install：安装rpm软件包；
+update：更新rpm软件包；
+check-update：检查是否有可用的更新rpm软件包；
+remove：删除指定的rpm软件包；
+list：显示软件包的信息；
+search：检查软件包的信息；
+info：显示指定的rpm软件包的描述信息和概要信息；
+clean：清理yum过期的缓存；
+shell：进入yum的shell提示符；
+resolvedep：显示rpm软件包的依赖关系；
+localinstall：安装本地的rpm软件包；
+localupdate：显示本地rpm软件包进行更新；
+deplist：显示rpm软件包的所有依赖关系。
+
+#### 实例
+
+常用的命令包括：
+
+```
+自动搜索最快镜像插件：yum install yum-fastestmirror
+安装yum图形窗口插件：yum install yumex
+查看可能批量安装的列表：yum grouplist
+```
+
+#### 安装
+
+```
+yum install              #全部安装
+yum install package1     #安装指定的安装包package1
+yum groupinsall group1   #安装程序组group1
+```
+
+#### 更新和升级
+
+```
+yum update               #全部更新
+yum update package1      #更新指定程序包package1
+yum check-update         #检查可更新的程序
+yum upgrade package1     #升级指定程序包package1
+yum groupupdate group1   #升级程序组group1
+```
+
+#### 查找和显示
+
+```
+yum info package1      #显示安装包信息package1
+yum list               #显示所有已经安装和可以安装的程序包
+yum list package1      #显示指定程序包安装情况package1
+yum groupinfo group1   #显示程序组group1信息yum search string 根据关键字string查找安装包
+```
+
+#### 删除程序
+
+```
+yum remove <package_name>    #删除程序包
+yum groupremove group1       #删除程序组group1
+yum deplist package1         #查看程序package1依赖情况
+```
+
+#### 清除缓存
+
+```
+yum clean packages       #清除缓存目录下的软件包
+yum clean headers        #清除缓存目录下的 headers
+yum clean oldheaders     #清除缓存目录下旧的 headers
+```
+
 
 # linux中工具使用
 

@@ -1,0 +1,342 @@
+{
+    "root": {
+        "data": {
+            "id": "cxujaz9mxsw0",
+            "created": 1703214934829,
+            "text": "DFX"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cxujc40ckns0",
+                    "created": 1703215023515,
+                    "text": "可靠性&稳定性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxuk4cpw5e80",
+                            "created": 1703217236671,
+                            "text": "上电自检",
+                            "priority": 1
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cxuk4mwmg9k0",
+                            "created": 1703217258845,
+                            "text": "针对不同硬件的心跳检测"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cxuk5y4w1b40",
+                            "created": 1703217361654,
+                            "text": "异常处理与容错机制",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxuk7yk0vc00",
+                                    "created": 1703217519298,
+                                    "text": "异常捕获"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxuk86beg1k0",
+                                    "created": 1703217536190,
+                                    "text": "错误码记录&处理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxuk877u7000",
+                                    "created": 1703217538152,
+                                    "text": "日志记录",
+                                    "note": "运行时可追踪\n可调式",
+                                    "priority": 1
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxulzdxbvqo0",
+                                            "created": 1703222489696,
+                                            "text": "关键时间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxulzgg5ghk0",
+                                            "created": 1703222495188,
+                                            "text": "错误信息"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxulzi3axmg0",
+                                            "created": 1703222498764,
+                                            "text": "异常情况"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxum0eoyqwg0",
+                            "created": 1703222569731,
+                            "text": "冗余设计与备份"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxum0ja60tk0",
+                                    "created": 1703222579720,
+                                    "text": "升级安全"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxum0tzx2w80",
+                                    "created": 1703222603045,
+                                    "text": "数据镜像"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxum0x8l4b40",
+                                    "created": 1703222610100,
+                                    "text": "主要组件或设备发生故障时，通过切换到备用组件或设备来保证系统的连续性和可用性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cxujdcutwig0",
+                    "created": 1703215121137,
+                    "text": "安全性",
+                    "note": "Security侧重数据安全、信息安全，Safety侧重环境安全",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxulxym0ogg0",
+                            "created": 1703222377996,
+                            "text": "安全编码"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxuly1iek5k0",
+                                    "created": 1703222384308,
+                                    "text": "对输入数据进行验证和边界检查"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cxulymvq9lk0",
+                                            "created": 1703222430826,
+                                            "text": "类型"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxulyoa5q740",
+                                            "created": 1703222433876,
+                                            "text": "范围"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cxulypznwh40",
+                                            "created": 1703222437594,
+                                            "text": "长度"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cxuly7uxg8w0",
+                                    "created": 1703222398126,
+                                    "text": "使用安全函数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cxuk2lok8uw0",
+                    "created": 1703217099453,
+                    "text": "可维护性",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxujm64uzk00",
+                            "created": 1703215811783,
+                            "text": "技术支持"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxuk9fmasao0",
+                                    "created": 1703217634805,
+                                    "text": "错误日志的获取"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxuk9sl54e00",
+                                    "created": 1703217663033,
+                                    "text": "现场支持"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxujl449nzk0",
+                            "created": 1703215729030,
+                            "text": "固件升级"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cxuka0bour40",
+                    "created": 1703217679876,
+                    "text": "可测试性"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxuka2kqqc00",
+                            "created": 1703217684776,
+                            "text": "通用上位机软件",
+                            "priority": 1
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cxukaa17um00",
+                            "created": 1703217701010,
+                            "text": "topic",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxujjuoh5iw0",
+                                    "created": 1703215630120,
+                                    "text": "测试用例的管理"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxujk0ztd000",
+                                    "created": 1703215643866,
+                                    "text": "单元测试"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxujkwqtpxk0",
+                                    "created": 1703215712979,
+                                    "text": "集成测试"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxujl0o8yls0",
+                                    "created": 1703215721531,
+                                    "text": "系统测试和性能测试"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxulx7zkwp40",
+                                    "created": 1703222320043,
+                                    "text": "边界条件测试"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxulxe87w600",
+                                    "created": 1703222333626,
+                                    "text": "异常测试"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cxujpeyk98g0",
+                    "created": 1703216066086,
+                    "text": "待展开",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxujpiv9iug0",
+                            "created": 1703216074594,
+                            "text": "软件 FMEA",
+                            "note": "##软件 FMEA（Failure Mode and Effects Analysis）\n一种风险评估和管理工具，用于识别并减少或消除软件开发和运行过程中可能发生的故障模式及其潜在影响。它有助于软件团队在早期阶段识别和解决潜在的问题，从而提高软件的可靠性和质量。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cxum3oqh8c80",
+                            "created": 1703222826683,
+                            "text": "资源管理与优化",
+                            "note": "合理管理和优化系统的资源，包括内存、处理器、网络带宽等，以避免资源耗尽或竞争导致系统崩溃或性能下降。"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
