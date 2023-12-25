@@ -26,7 +26,8 @@
                         "data": {
                             "id": "cxuk4mwmg9k0",
                             "created": 1703217258845,
-                            "text": "针对不同硬件的心跳检测"
+                            "text": "针对不同硬件的心跳检测",
+                            "priority": 1
                         },
                         "children": []
                     },
@@ -206,7 +207,8 @@
                                 "data": {
                                     "id": "cxuk9fmasao0",
                                     "created": 1703217634805,
-                                    "text": "错误日志的获取"
+                                    "text": "通过已有接口错误日志的获取",
+                                    "priority": 1
                                 },
                                 "children": []
                             },
@@ -244,7 +246,16 @@
                             "text": "通用上位机软件",
                             "priority": 1
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxuomd7214g0",
+                                    "created": 1703229932703,
+                                    "text": "当前协议交互不够简单"
+                                },
+                                "children": []
+                            }
+                        ]
                     },
                     {
                         "data": {
@@ -258,7 +269,8 @@
                                 "data": {
                                     "id": "cxujjuoh5iw0",
                                     "created": 1703215630120,
-                                    "text": "测试用例的管理"
+                                    "text": "测试用例的管理",
+                                    "priority": 1
                                 },
                                 "children": []
                             },
