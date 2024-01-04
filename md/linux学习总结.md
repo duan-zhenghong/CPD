@@ -1868,6 +1868,45 @@ ls -d */  #显示目录下所有的文件夹名
 lsb_release -a # 查看发行版本信息
 ```
 
+## lscpu
+
+```
+jihan@ubuntu:/mnt/hgfs/share$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              8
+On-line CPU(s) list: 0-7
+Thread(s) per core:  1
+Core(s) per socket:  2
+Socket(s):           4
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               151
+Model name:          12th Gen Intel(R) Core(TM) i7-12700F
+Stepping:            2
+CPU MHz:             2112.000
+BogoMIPS:            4224.00
+Hypervisor vendor:   VMware
+Virtualization type: full
+L1d cache:           48K
+L1i cache:           32K
+L2 cache:            1280K
+L3 cache:            25600K
+NUMA node0 CPU(s):   0-7
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves arat umip gfni vaes vpclmulqdq rdpid flush_l1d arch_capabilities
+```
+
+`lscpu` 命令将显示有关 CPU 和系统架构的详细信息。以下是一些常见输出字段的说明：
+
+* Architecture：显示系统的架构类型，如 x86_64、armv7l 等。
+* CPU(s)：显示逻辑 CPU 核心数，包括可见的线程数。
+* Thread(s) per core：显示每个物理核心的线程数。
+* Core(s) per socket：显示每个 CPU 插槽的核心数。
+* Socket(s)：显示 CPU 插槽的数量。
+* Model name：显示 CPU 的型号和信息。
+
 ## more
 
 more 命令类似 cat ，不过会以一页一页的形式显示，更方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示，而且还有搜寻字串的功能（与 vi 相似），使用中的说明文件，请按 h 。
@@ -2760,7 +2799,6 @@ yum clean headers        #清除缓存目录下的 headers
 yum clean oldheaders     #清除缓存目录下旧的 headers
 ```
 
-
 # linux中工具使用
 
 ## docker
@@ -3092,6 +3130,14 @@ sudo systemctl set-default multi-user.target
 sudo dpkg-reconfigure unattended-upgrades
 # 选择no并按ENTER以禁用无人参与的升级。
 # 后面可以使用 sudo apt update 或 sudo apt upgrade 进行升级
+```
+
+### 找不到网卡，只有本地环回
+
+```
+sudo service network–manager restart # 重启网络 
+sudo dhclient ens33 # 获取ip
+sudo ifconfig ens33 # 查看ip
 ```
 
 # 参考

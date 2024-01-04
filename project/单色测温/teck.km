@@ -1,0 +1,56 @@
+{
+    "root": {
+        "data": {
+            "id": "cxx6vz8uhmw0",
+            "created": 1703484585870,
+            "text": "相关概念"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cxx6w8cf88w0",
+                    "created": 1703484605677,
+                    "text": "ADC"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cxx6wa1k1z40",
+                            "created": 1703484609374,
+                            "text": "极性分类"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cxx6wnh39o00",
+                                    "created": 1703484638611,
+                                    "text": "单极性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cxx6woz3ay00",
+                                    "created": 1703484641876,
+                                    "text": "双极性"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cxx6wijkm2o0",
+                            "created": 1703484627877,
+                            "text": "偏置电压"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

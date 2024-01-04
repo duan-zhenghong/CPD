@@ -3,13 +3,14 @@ title: git 命令总结
 date: 2021-07-12 01:16:30
 tags: 总结
 ---
-# git入门
+
+# git 入门
 
 官方文档有最全面的讲解，优先参考官方文档 ：[https://git-scm.com/book/zh/v2](https://git-scm.com/book/zh/v2)
 
 ## 关键概念
 
-### git中的四个区域
+### git 中的四个区域
 
 #### 工作目录（Working Directory）
 
@@ -25,19 +26,19 @@ tags: 总结
 
 在 `.git` 文件夹中，有一些重要的文件和目录，包括：
 
-* `objects` 目录：存储 Git 对象的实际内容。
-* `refs` 目录：存储分支（branches）、标签（tags）和其他引用的指针文件。
-* `HEAD` 文件：指向当前所在分支的引用。
-* `config` 文件：存储仓库的配置信息。
-* `logs` 目录：存储提交历史记录和其他引用的日志。
+- `objects` 目录：存储 Git 对象的实际内容。
+- `refs` 目录：存储分支（branches）、标签（tags）和其他引用的指针文件。
+- `HEAD` 文件：指向当前所在分支的引用。
+- `config` 文件：存储仓库的配置信息。
+- `logs` 目录：存储提交历史记录和其他引用的日志。
 
 #### 远程仓库（Remote Repository）
 
 远程仓库是位于远程服务器上的 Git 仓库副本。它允许多个开发者之间的协作和代码共享。远程仓库通常用于团队协作或备份代码。您可以使用 `git push` 命令将本地仓库中的更改推送到远程仓库，以便其他开发者可以访问和获取最新的更改。类似地，使用 `git pull` 命令从远程仓库拉取最新的更改到本地仓库。远程仓库可以使用 URL 进行访问，例如 GitHub、GitLab 或 Bitbucket。
 
-> 远端仓库的创建配置和使用在对应的平台有详细描述，例如gitee：[https://help.gitee.com/repository](https://help.gitee.com/repository)
+> 远端仓库的创建配置和使用在对应的平台有详细描述，例如 gitee：[https://help.gitee.com/repository](https://help.gitee.com/repository)
 
-### GIT中的指针（引用）
+### GIT 中的指针（引用）
 
 #### HEAD
 
@@ -57,11 +58,11 @@ HEAD 是当前所在分支的引用，也是当前工作树（Working Tree）所
 
 标签引用是指向特定提交的不可变指针。标签用于标记某个特殊的提交，通常是版本号、重要里程碑或发布版本等。标签引用不会随提交的改变而移动，因此可以用于永久性地标记某个特定状态。
 
-## 常用git操作
+## 常用 git 操作
 
 ### 密钥配置
 
-> Windows 用户建议使用 **Windows PowerShell** 或者  **Git Bash** ，在 **命令提示符** 下无 `cat` 和 `ls` 命令。
+> Windows 用户建议使用 **Windows PowerShell** 或者 **Git Bash** ，在 **命令提示符** 下无 `cat` 和 `ls` 命令。
 
 1、通过命令 `ssh-keygen` 生成 SSH Key：
 
@@ -69,8 +70,8 @@ HEAD 是当前所在分支的引用，也是当前工作树（Working Tree）所
 ssh-keygen -t ed25519 -C"Gitee SSH Key"
 ```
 
-* `-t` key 类型
-* `-C` 注释
+- `-t` key 类型
+- `-C` 注释
 
 输出，如：
 
@@ -97,7 +98,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-* 中间通过三次**回车键**确定
+- 中间通过三次**回车键**确定
 
 2、查看生成的 SSH 公钥和私钥：
 
@@ -111,8 +112,8 @@ ls ~/.ssh/
 id_ed25519  id_ed25519.pub
 ```
 
-* 私钥文件 `id_ed25519`
-* 公钥文件 `id_ed25519.pub`
+- 私钥文件 `id_ed25519`
+- 公钥文件 `id_ed25519.pub`
 
 3、读取公钥文件 `~/.ssh/id_ed25519.pub`：
 
@@ -210,15 +211,15 @@ git commit
 git branch -d <branch>
 ```
 
-## 常用git命令
+## 常用 git 命令
 
 ### **git status**
 
-* 当前分支的名称：显示当前所在的分支。
-* 未暂存的文件：列出在工作目录中已被修改但尚未添加到暂存区的文件。
-* 暂存区的文件：列出已经添加到暂存区但尚未提交的文件。
-* 未跟踪的文件：列出在工作目录中存在但尚未被 Git 跟踪的文件。
-* 分支状态：如果本地分支落后于远程分支，将显示提示信息。
+- 当前分支的名称：显示当前所在的分支。
+- 未暂存的文件：列出在工作目录中已被修改但尚未添加到暂存区的文件。
+- 暂存区的文件：列出已经添加到暂存区但尚未提交的文件。
+- 未跟踪的文件：列出在工作目录中存在但尚未被 Git 跟踪的文件。
+- 分支状态：如果本地分支落后于远程分支，将显示提示信息。
 
 ### git add
 
@@ -254,10 +255,10 @@ git diff <filename> 是一个用于比较特定文件差异的 Git 命令。它�
 
 ```
 git log # 每条记录包含下面的信息
-git log --author=<author>  # 
+git log --author=<author>  #
 ```
 
---oneline:  把每一个提交压缩到了一行中
+--oneline: 把每一个提交压缩到了一行中
 
 --decorate: 让 git log 显示指向这个提交的所有引用（比如说分支、标签等）
 
@@ -299,9 +300,9 @@ git clean -d 或 git clean --directories: 移除未跟踪的目录。
 git clean -x 或 git clean --force --ignored: 移除未跟踪的文件和目录，包括被忽略的文件。
 ```
 
-* -n  clean的演习, 告诉你哪些文件将会被删除.不会真正的删除文件, 只是一个提醒
-* -f  删除当前目录下所有没有track过的文件. 他不会删除.gitignore文件里面指定的文件夹和文件, 不管这些文件有没有被track过
-* -e 文件名或目录：删除时需忽略的文件名或目录
+- -n clean 的演习, 告诉你哪些文件将会被删除.不会真正的删除文件, 只是一个提醒
+- -f 删除当前目录下所有没有 track 过的文件. 他不会删除.gitignore 文件里面指定的文件夹和文件, 不管这些文件有没有被 track 过
+- -e 文件名或目录：删除时需忽略的文件名或目录
 
 ### git remote
 
@@ -355,7 +356,7 @@ Git 提供了凭据助手（credential helper）来方便地保存用户名和�
 git config --global credential.helper store
 ```
 
-> ``store` 凭据助手将凭据以明文形式存储在本地计算机上的文件中。下次与远程仓库进行交互时，Git 将从该文件中提取凭据，而无需再次输入。这种方法简单明了，但安全性较低，因为凭据以明文形式存储。主要用于https，ssh使用秘钥不需要保存密码。
+> ``store` 凭据助手将凭据以明文形式存储在本地计算机上的文件中。下次与远程仓库进行交互时，Git 将从该文件中提取凭据，而无需再次输入。这种方法简单明了，但安全性较低，因为凭据以明文形式存储。主要用于 https，ssh 使用秘钥不需要保存密码。
 
 ```
 git config --global credential.helper cache
@@ -411,7 +412,7 @@ git stash pop <stash_id> 恢复指定标识符的存档并删除它
 
 ## 子仓功能
 
-### 添加submodule
+### 添加 submodule
 
 `git submodule add <url> <path>`
 
@@ -419,13 +420,13 @@ url：为子模块的路径，
 
 path：为该子模块存储的目录路径。
 
-执行成功后，git status会看到项目中修改了.gitmodules，并增加了一个新文件（为刚刚添加的路径）
+执行成功后，git status 会看到项目中修改了.gitmodules，并增加了一个新文件（为刚刚添加的路径）
 
-git diff --cached查看修改内容可以看到增加了子模块，并且新文件下为子模块的提交hash摘要
+git diff --cached 查看修改内容可以看到增加了子模块，并且新文件下为子模块的提交 hash 摘要
 
-git commit提交即完成子模块的添加
+git commit 提交即完成子模块的添加
 
-### 使用submodule
+### 使用 submodule
 
 克隆项目后，默认子模块目录下无任何内容。需要在项目根目录执行如下命令完成子模块的下载：
 
@@ -434,24 +435,24 @@ git commit提交即完成子模块的添加
 或：
 
 `git submodule update --init --recursive`
-执行后，子模块目录下就有了源码，再执行相应的makefile即可。
+执行后，子模块目录下就有了源码，再执行相应的 makefile 即可。
 
-### 更新submodule
+### 更新 submodule
 
 子模块的维护者提交了更新后，使用子模块的项目必须手动更新才能包含最新的提交。
 
-在项目中，进入到子模块目录下，执行 git pull更新，查看git log查看相应提交。
+在项目中，进入到子模块目录下，执行 git pull 更新，查看 git log 查看相应提交。
 
-完成后返回到项目目录，可以看到子模块有待提交的更新，使用git add，提交即可。
+完成后返回到项目目录，可以看到子模块有待提交的更新，使用 git add，提交即可。
 
-### 删除submodule
+### 删除 submodule
 
 有时子模块的项目维护地址发生了变化，或者需要替换子模块，就需要删除原有的子模块。
 
 删除子模块较复杂，步骤如下：
 
 `rm -rf` 子模块目录 删除子模块目录及源码
-`vi .gitmodules` 删除项目目录下.gitmodules文件中子模块相关条目
+`vi .gitmodules` 删除项目目录下.gitmodules 文件中子模块相关条目
 `vi .git/config` 删除配置项中子模块相关条目
 `rm .git/module/*` 删除模块下的子模块目录，每个子模块对应一个目录，注意只删除对应的子模块目录即可
 执行完成后，再执行添加子模块命令即可，如果仍然报错，执行如下：
@@ -462,34 +463,61 @@ git rm --cached 子模块名称
 
 ## 特殊操作
 
-### git仓超大文件清理
+### git 仓超大文件清理
 
-当Git仓库中包含超大文件时，可以采取以下步骤来清理它们：
+当 Git 仓库中包含超大文件时，可以采取以下步骤来清理它们：
 
-1. 检查超大文件：首先，使用以下命令检查Git仓库中的大文件：
+1. 检查超大文件：首先，使用以下命令检查 Git 仓库中的大文件：
 
    ```
    git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | awk '/^blob/ {print substr($0,6)}' | sort --numeric-sort --key=2 | cut --complement --characters=13-40 --stable | numfmt --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
    ```
 
-   > 这个命令会列出Git仓库中的所有对象，并按照文件大小进行排序。您可以查看列表，找到超过您期望的文件大小的文件。
-   >
-2. 从历史记录中移除大文件：如果发现了超大文件，可以使用 `git filter-branch`命令从Git历史记录中完全移除它们。请注意，这将重新写入整个历史记录，因此请谨慎操作并备份仓库。
+   > 这个命令会列出 Git 仓库中的所有对象，并按照文件大小进行排序。您可以查看列表，找到超过您期望的文件大小的文件。
+
+2. 从历史记录中移除大文件：如果发现了超大文件，可以使用 `git filter-branch`命令从 Git 历史记录中完全移除它们。请注意，这将重新写入整个历史记录，因此请谨慎操作并备份仓库。
 
    ```
    git filter-branch --force --index-filter'git rm --cached --ignore-unmatch <file_path>' --prune-empty --tag-name-filtercat -- --all
    ```
 
    > 将 `<file_path>`替换为要移除的大文件的路径。这个命令将重新写入历史记录，并从每个提交中移除指定的文件。
-   >
-3. 清理Git对象：执行上述步骤后，仓库中的大文件已经从历史记录中移除，但它们仍然存在于Git对象数据库中。为了彻底清理它们，可以运行以下命令：
+
+3. 清理 Git 对象：执行上述步骤后，仓库中的大文件已经从历史记录中移除，但它们仍然存在于 Git 对象数据库中。为了彻底清理它们，可以运行以下命令：
 
    ```
    git reflog expire --expire=now --all
    git gc --prune=now
    ```
 
-   > 这些命令将清理不再可达的对象，并优化Git仓库的存储。
-   >
+   > 这些命令将清理不再可达的对象，并优化 Git 仓库的存储。
 
-请注意，执行这些操作可能会对Git仓库产生重大影响，因此在执行之前，请务必备份您的仓库以防万一。此外，如果仓库是多人协作的，还需要与团队成员进行协调和沟通。
+请注意，执行这些操作可能会对 Git 仓库产生重大影响，因此在执行之前，请务必备份您的仓库以防万一。此外，如果仓库是多人协作的，还需要与团队成员进行协调和沟通。
+
+### 补丁功能
+
+使用 `patch`功能有以下几个常见的应用场景：
+
+1. 生成补丁文件：你可以使用 Git 的 `git diff`命令生成两个不同版本之间的差异，并将差异导出为补丁文件。例如：
+
+   ```
+    git diff > changes.patch # 这将生成一个名为 `changes.patch`的补丁文件，其中包含当前工作区与最新提交之间的差异。
+   ```
+
+   ```
+   git diff <commit1> <commit2> > changes.patch # 这将生成一个名为 `changes.patch` 的补丁文件，其中包含指定的两个 Commit ID 之间的差异。
+   ```
+
+   注意，`<commit1>` 和 `<commit2>` 可以是 Commit ID、分支、标签或其他引用，用于表示你要比较的两个提交。
+
+2. 应用补丁文件：你可以使用 Git 的 `git apply`命令将补丁文件应用到源代码中。例如：
+
+   ```
+   git apply changes.patch
+   ```
+
+   这将根据补丁文件中的描述，将更改应用到源代码中。如果补丁成功应用，Git 会尝试将更改应用到相应的文件中，并生成新的修改。
+
+   > 注意：补丁文件中的上下文行与目标文件要匹配。补丁文件中的上下文行提供了应用补丁所需的参考点。补丁文件是一种通用的文本格式，描述了源文件的更改内容。你可以手动创建补丁文件或使用其他工具生成补丁文件。
+
+3. 查看补丁文件：你可以使用文本编辑器或 `less`等工具来查看补丁文件的内容。补丁文件通常包含了文件的路径、更改的行号以及具体的更改内容。

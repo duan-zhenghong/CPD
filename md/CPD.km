@@ -1,0 +1,64 @@
+{
+    "root": {
+        "data": {
+            "id": "cy418ok8hcw0",
+            "created": 1704179574385,
+            "text": "个人能力提升"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cy418sd4b7k0",
+                    "created": 1704179582662,
+                    "text": "单片机专家养成"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cy419939p480",
+                            "created": 1704179619072,
+                            "text": "芯片外设库"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cy419ysaq0o0",
+                                    "created": 1704179675005,
+                                    "text": "I2C"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cy41a6n83xc0",
+                                    "created": 1704179692112,
+                                    "text": "dma"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cy41a7pxowo0",
+                                    "created": 1704179694453,
+                                    "text": "I2CA"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cy419ldk7a80",
+                            "created": 1704179645815,
+                            "text": "软件框架完善"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
