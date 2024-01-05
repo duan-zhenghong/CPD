@@ -72,7 +72,7 @@
                     "id": "cwotjdmjrj40",
                     "created": 1698978285917,
                     "text": "storage",
-                    "expandState": "collapse",
+                    "expandState": "expand",
                     "layout": null
                 },
                 "children": [
@@ -120,7 +120,7 @@
                     "id": "cwotjdpq8vc0",
                     "created": 1698978286109,
                     "text": "video",
-                    "expandState": "collapse",
+                    "expandState": "expand",
                     "layout": null
                 },
                 "children": [
@@ -199,7 +199,7 @@
                     "text": "audio",
                     "priority": 1,
                     "layout": null,
-                    "expandState": "collapse"
+                    "expandState": "expand"
                 },
                 "children": [
                     {
